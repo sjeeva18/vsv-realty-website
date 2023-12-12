@@ -1,0 +1,59 @@
+.residency-container {
+  gap: 2rem;
+  position: relative;
+}
+
+.residency-container > img {
+  align-self: center;
+  max-height: 35rem;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.residency-details {
+  width: 100%;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.residency-details > div {
+  flex: 1;
+  gap: 1.5rem;
+}
+
+.residency-details .left .head {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.rupees {
+  color: grey;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.facilities {
+  gap: 1rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.facility {
+  gap: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .residency-container > div {
+    flex-direction: column;
+  }
+  .head {
+    flex-direction: column;
+  }
+  .facilities {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .residency-details > div {
+    width: 100%;
+  }
+}

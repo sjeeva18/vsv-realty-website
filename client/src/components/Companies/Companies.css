@@ -1,0 +1,8 @@
+.cmp-container {
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.cmp-container > img {
+  width: 10rem;
+}
