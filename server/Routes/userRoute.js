@@ -1,15 +1,8 @@
 import express from "express";
-import {
-  bookVisit,
-  cancelBooking,
-  createUser,
-  getAllBookings,
-  getAllFavourites,
-  toFav,
-} from "../Controllers/userCntrl.js";
-import jwtCheck from "../Config/auth0Config.js";
+import { createUser } from "../Controllers/userCntrl.js";
+
 const router = express.Router();
 
-router.post("/register", jwtCheck, createUser);
+router.post("/register", createUser);
 
 export { router as userRoute };
