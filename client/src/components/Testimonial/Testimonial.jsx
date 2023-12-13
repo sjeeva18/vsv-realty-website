@@ -7,7 +7,7 @@ const Testimonial = () => {
   return (
     <section className="test">
       <div className="paddings innerWidth flexColStart">
-        <span className="orangeText">Let Swipe for Our Mentor</span>
+        <span className="orangeText">Let Swipe for Our Mentors</span>
         <span className="primaryText">Best in the Business</span>
       </div>
       <Swiper>
@@ -124,7 +124,6 @@ const Testimonial = () => {
                     into reality. Let's navigate the path to your ideal
                     apartment in the heart of the city together.
                   </p>
-                  *
                   <ImQuotesLeft className="quote-icon" />
                   <div className="details">
                     <span className="peru">
