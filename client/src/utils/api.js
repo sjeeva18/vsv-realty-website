@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import { toast } from "react-toastify";
 
 export const api = axios.create({
-  baseURL: "https://vsvrealty.onrender.com/api",
+  baseURL: "https://vsv-realty-website.vercel.app/api",
 });
 
 export const getAllResidencies = async () => {
