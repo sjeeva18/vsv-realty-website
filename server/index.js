@@ -5,6 +5,7 @@ import cors from "cors";
 import { userRoute } from "./Routes/userRoute.js";
 import { residencyRoute } from "./Routes/residencyRoute.js";
 import { landRoute } from "./Routes/landRoute.js";
+
 dotenv.config();
 
 const app = express();

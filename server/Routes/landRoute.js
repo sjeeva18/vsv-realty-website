@@ -1,5 +1,5 @@
 import express from "express";
-import { createLand, getAllLands, getLand } from "../controllers/landCntrl.js";
+import { createLand, getAllLands, getLand } from "../Controllers/landCntrl.js";
 
 const router = express.Router();
 
