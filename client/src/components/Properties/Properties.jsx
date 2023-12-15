@@ -38,7 +38,7 @@ const Properties = () => {
         <div className="r-head flexColStart">
           <span className="orangeText">Best Choices</span>
           <NavLink to="/residencies">
-            <span className="primaryText">Popular Apartments</span>
+            <span className="primaryText">Popular Residency</span>
           </NavLink>
         </div>
 
