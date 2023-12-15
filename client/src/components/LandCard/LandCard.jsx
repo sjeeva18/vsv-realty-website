@@ -12,8 +12,7 @@ const LandCard = ({ card }) => {
       <img src={card.image} alt="home" />
 
       <span className="thirdText l-price">
-        <span>{card.area}</span>
-        <span>-</span>
+        <span>{card.area}</span>{" "} <span>-</span>{" "}
         <span style={{ color: "goldenrod" }}>Rs.</span>
         <span>{card.price}</span>
       </span>
