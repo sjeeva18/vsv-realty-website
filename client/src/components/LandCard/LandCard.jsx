@@ -15,7 +15,7 @@ const LandCard = ({ card }) => {
         <span style={{ color: "goldenrod" }}>Rs.</span>
         <span>{card.price}</span>" "
         <span>/</span>" "
-        <span>{card.areae}</span>
+        <span>{card.area}</span>
       </span>
 
       <span className="primaryText">
