@@ -20,7 +20,7 @@ const PropertyCard = ({ card }) => {
         {truncate(card.title, { length: 20 })}
       </span>
       <span className="secondaryText">
-        {truncate(card.description, { length: 80 })}
+        {truncate(card.address, { length: 80 })}
       </span>
     </div>
   );
