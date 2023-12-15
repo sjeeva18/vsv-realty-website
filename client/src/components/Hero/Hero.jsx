@@ -52,7 +52,7 @@ const Hero = () => {
             }}
             className="flexCenter image-container"
           >
-            <img src="./enddaylight.jpg" alt="" />
+            <img src="https://i.ibb.co/dG2yrDz/tobias-wilden-4453-DIQWts-Q-unsplash.jpg" alt="" />
           </motion.div>
         </div>
       </div>
