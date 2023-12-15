@@ -18,7 +18,7 @@ const LandCard = ({ card }) => {
       </span>
 
       <span className="primaryText">
-        {truncate(card.title, { length: 20 })}
+        {truncate(card.address, { length: 20 })}
       </span>
       <span className="secondaryText">
         {truncate(card.description, { length: 80 })}
