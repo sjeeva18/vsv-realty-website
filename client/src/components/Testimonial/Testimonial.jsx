@@ -127,7 +127,7 @@ const Testimonial = () => {
                   <ImQuotesLeft className="quote-icon" />
                   <div className="details">
                     <span className="peru">
-                      S. Jeevanandham, B.E. ECE. (Co-Manager)
+                      S. Jeevanandham, B.E. (Co-Manager)
                     </span>
                     <span className="cmpny">VSV REALTY</span>
                   </div>
