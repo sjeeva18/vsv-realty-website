@@ -33,15 +33,9 @@ const Hero = () => {
           </div>
 
           <div className="flexColStart hero-link">
-            <span>
-              <NavLink to="/residencies">Residencies</NavLink>
-            </span>
-            <span>
-              <NavLink to="/lands">Lands</NavLink>
-            </span>
-            <span>
-              <NavLink to="/aboutus">About Us</NavLink>
-            </span>
+            <NavLink to="/residencies">Residencies</NavLink>
+            <NavLink to="/lands">Lands</NavLink>
+            <NavLink to="/aboutus">About Us</NavLink>
           </div>
 
           <div className="flexCenter stats">
