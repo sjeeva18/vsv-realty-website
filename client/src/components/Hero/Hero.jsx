@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="hero-wrapper">
