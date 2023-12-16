@@ -32,7 +32,7 @@ const Hero = () => {
             </span>
           </div>
 
-          <div className="flexColStart hero-link">
+          <div className="flexCenter hero-link">
             <NavLink to="/residencies">Residencies</NavLink>
             <NavLink to="/lands">Lands</NavLink>
             <NavLink to="/aboutus">About Us</NavLink>
