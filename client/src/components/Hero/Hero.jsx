@@ -35,11 +35,11 @@ const Hero = () => {
 
           <div className="flexCenter hero-link">
             <NavLink to="/residencies">
-              <FaAngleDoubleRight size={30} />
+              <FaAngleDoubleRight size={10} />
               Residencies
             </NavLink>
             <NavLink to="/lands">
-              <FaAngleDoubleRight size={30} />
+              <FaAngleDoubleRight size={10} />
               Lands
             </NavLink>
           </div>
