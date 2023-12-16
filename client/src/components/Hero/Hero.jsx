@@ -9,33 +9,31 @@ const Hero = () => {
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left side */}
-        <div className="hero-left">
-          <div className="flexColStart">
-            <div className="hero-title">
-              <motion.h1
-                initial={{ y: "7rem", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{
-                  duration: 2,
-                  type: "spring",
-                }}
-              >
-                Your Gateway to Chennai's <br /> BUDGET PREMIUM LUXURY
-              </motion.h1>
-            </div>
+        <div className="flexColStart hero-left">
+          <div className="hero-title">
+            <motion.h1
+              initial={{ y: "7rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                duration: 2,
+                type: "spring",
+              }}
+            >
+              Your Gateway to Chennai's <br /> BUDGET PREMIUM LUXURY
+            </motion.h1>
+          </div>
 
-            <div className="flexColStart hero-des">
-              <span className="thirdText">
-                Explore Chennai's perfect properties with us.
-              </span>
-              <span className="thirdText">
-                From cozy apartments to elegant homes, find your ideal match
-                effortlessly.
-              </span>
-              <span className="thirdText">
-                Start your search now for a home that suits your lifestyle.
-              </span>
-            </div>
+          <div className="flexColStart hero-des">
+            <span className="thirdText">
+              Explore Chennai's perfect properties with us.
+            </span>
+            <span className="thirdText">
+              From cozy apartments to elegant homes, find your ideal match
+              effortlessly.
+            </span>
+            <span className="thirdText">
+              Start your search now for a home that suits your lifestyle.
+            </span>
           </div>
 
           <div className="flexCenter hero-link">
