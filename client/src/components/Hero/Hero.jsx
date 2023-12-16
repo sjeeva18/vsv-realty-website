@@ -31,6 +31,12 @@ const Hero = () => {
             </span>
           </div>
 
+          <div className="flexColStart hero-link">
+            <span>
+              <NavLink to="/residencies">Residencies</NavLink>
+            </span>
+          </div>
+
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
@@ -52,7 +58,10 @@ const Hero = () => {
             }}
             className="flexCenter image-container"
           >
-            <img src="https://i.ibb.co/dG2yrDz/tobias-wilden-4453-DIQWts-Q-unsplash.jpg" alt="" />
+            <img
+              src="https://i.ibb.co/dG2yrDz/tobias-wilden-4453-DIQWts-Q-unsplash.jpg"
+              alt=""
+            />
           </motion.div>
         </div>
       </div>
