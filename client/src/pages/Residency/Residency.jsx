@@ -136,7 +136,7 @@ const Residency = () => {
               style={{ gap: "1rem", color: "#1F3E72" }}
             >
               <MdLocationPin size={30} />
-              <div className="thirdText">
+              <div className="fifthText">
                 <div>{data?.address}</div>
                 <div>{data?.city}</div>
                 <div>{data?.state}</div>
