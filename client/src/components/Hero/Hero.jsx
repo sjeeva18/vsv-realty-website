@@ -3,6 +3,7 @@ import "./Hero.css";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { FaAngleDoubleRight } from "react-icons/fa";
 const Hero = () => {
   return (
     <section className="hero-wrapper">
@@ -33,9 +34,14 @@ const Hero = () => {
           </div>
 
           <div className="flexCenter hero-link">
-            <NavLink to="/residencies">Residencies</NavLink>
-            <NavLink to="/lands">Lands</NavLink>
-            <NavLink to="/aboutus">About Us</NavLink>
+            <NavLink to="/residencies">
+              <FaAngleDoubleRight size={30} />
+              Residencies
+            </NavLink>
+            <NavLink to="/lands">
+              <FaAngleDoubleRight size={30} />
+              Lands
+            </NavLink>
           </div>
 
           <div className="flexCenter stats">
