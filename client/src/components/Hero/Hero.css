@@ -10,14 +10,13 @@
   align-items: flex-end;
 }
 
-.hero-link {
+.hero-link{
   color: white;
   font-weight: 600;
-  font: bold;
+  font: 600;
   font-size: 2rem;
   gap: 2rem;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 /* left side */
 .hero-left {
