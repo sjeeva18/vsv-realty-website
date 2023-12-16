@@ -35,6 +35,8 @@ const Hero = () => {
           <div className="flexColStart hero-link">
             <span>
               <NavLink to="/residencies">Residencies</NavLink>
+              <NavLink to="/lands">Lands</NavLink>
+              <NavLink to="/aboutus">About Us</NavLink>
             </span>
           </div>
 
