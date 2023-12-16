@@ -49,6 +49,12 @@ const Hero = () => {
                 Lands
               </NavLink>
             </span>
+            <span>
+              <NavLink to="/lands">
+                <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
+                New Project
+              </NavLink>
+            </span>
           </div>
 
           <div className="flexCenter stats">
