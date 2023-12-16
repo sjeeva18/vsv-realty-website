@@ -39,12 +39,12 @@ const Hero = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 2, typer: "spring" }}
             >
-              <NavLink to="/residencies" >
-                <FaAngleDoubleRight size={15} style={{gap: "1rem"}} />
+              <NavLink to="/residencies">
+                <FaAngleDoubleRight size={15} style={{ gap: "1rem" }} />
                 Residencies
               </NavLink>
               <NavLink to="/lands">
-                <FaAngleDoubleRight size={15} />
+                <FaAngleDoubleRight size={15} style={{ gap: "1rem" }} />
                 Lands
               </NavLink>
             </motion.div>
