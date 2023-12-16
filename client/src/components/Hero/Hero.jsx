@@ -41,12 +41,10 @@ const Hero = () => {
               <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
               Residencies
             </NavLink>
-
             <NavLink to="/lands">
               <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
               Lands
             </NavLink>
-
             <NavLink to="/lands">
               <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
               New Projects
