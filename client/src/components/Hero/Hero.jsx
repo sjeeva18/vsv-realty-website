@@ -9,18 +9,20 @@ const Hero = () => {
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left side */}
-        <div className="flexColStart hero-left">
-          <div className="hero-title">
-            <motion.h1
-              initial={{ y: "7rem", opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{
-                duration: 2,
-                type: "spring",
-              }}
-            >
-              Your Gateway to Chennai's <br /> BUDGET PREMIUM LUXURY
-            </motion.h1>
+        <div className="hero-left">
+          <div className="flexColStart">
+            <div className="hero-title">
+              <motion.h1
+                initial={{ y: "7rem", opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{
+                  duration: 2,
+                  type: "spring",
+                }}
+              >
+                Your Gateway to Chennai's <br /> BUDGET PREMIUM LUXURY
+              </motion.h1>
+            </div>
           </div>
 
           <div className="flexColStart hero-des">
