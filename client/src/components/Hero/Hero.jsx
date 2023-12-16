@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left side */}
-        <div className="flexColStart hero-left">
+        <div className="flexCenter hero-left">
           <div className="hero-title">
             <motion.h1
               initial={{ y: "7rem", opacity: 0 }}
