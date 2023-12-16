@@ -48,7 +48,7 @@ const Hero = () => {
           </div>
 
           <div className="flexCenter stats">
-            <div className="flexColCenter stat">
+            <div className="flexCenter stat">
               <span>
                 <CountUp end={15} />
                 <span>+</span>
