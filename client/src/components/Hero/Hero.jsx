@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left side */}
-        <div className="flexCenter hero-left">
+        <div className="flexColStart hero-left">
           <div className="hero-title">
             <motion.h1
               initial={{ y: "7rem", opacity: 0 }}
@@ -22,7 +22,9 @@ const Hero = () => {
               Your Gateway to Chennai's <br /> BUDGET PREMIUM LUXURY
             </motion.h1>
           </div>
+        </div>
 
+        <div className="hero-left">
           <div className="flexColStart hero-des">
             <span className="thirdText">
               Explore Chennai's perfect properties with us.
@@ -35,7 +37,9 @@ const Hero = () => {
               Start your search now for a home that suits your lifestyle.
             </span>
           </div>
+        </div>
 
+        <div className="hero-left">
           <div className="flexCenter hero-link">
             <NavLink to="/residencies">
               <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
@@ -46,9 +50,11 @@ const Hero = () => {
               Lands
             </NavLink>
           </div>
+        </div>
 
+        <div className="hero-left">
           <div className="flexCenter stats">
-            <div className="flexCenter stat">
+            <div className="flexColCenter stat">
               <span>
                 <CountUp end={15} />
                 <span>+</span>
