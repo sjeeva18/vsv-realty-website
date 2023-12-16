@@ -38,11 +38,11 @@ const Hero = () => {
 
           <div className="flexCenter hero-link">
             <NavLink to="/residencies">
-              <FaAngleDoubleRight size={15} style={{ gap: "1rem" }} />
+              <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
               Residencies
             </NavLink>
             <NavLink to="/lands">
-              <FaAngleDoubleRight size={15} style={{ gap: "1rem" }} />
+              <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
               Lands
             </NavLink>
           </div>
