@@ -34,14 +34,20 @@ const Hero = () => {
           </div>
 
           <div className="flexCenter hero-link">
-            <NavLink to="/residencies">
-              <FaAngleDoubleRight size={15} />
-              Residencies
-            </NavLink>
-            <NavLink to="/lands">
-              <FaAngleDoubleRight size={15} />
-              Lands
-            </NavLink>
+            <motion.div
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 2, typer: "spring" }}
+            >
+              <NavLink to="/residencies" >
+                <FaAngleDoubleRight size={15} style={{gap: "1rem"}} />
+                Residencies
+              </NavLink>
+              <NavLink to="/lands">
+                <FaAngleDoubleRight size={15} />
+                Lands
+              </NavLink>
+            </motion.div>
           </div>
 
           <div className="flexCenter stats">
