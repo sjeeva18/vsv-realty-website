@@ -12,9 +12,12 @@ const Hero = () => {
         <div className="flexColStart hero-left">
           <div className="hero-title">
             <motion.h1
-              initial={{ y: "2rem", opacity: 0 }}
+              initial={{ y: "7rem", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 2, typer: "spring" }}
+              transition={{
+                duration: 2,
+                type: "spring",
+              }}
             >
               Your Gateway to Chennai's <br /> BUDGET PREMIUM LUXURY
             </motion.h1>
