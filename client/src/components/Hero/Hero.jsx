@@ -36,8 +36,8 @@ const Hero = () => {
             </span>
           </div>
 
-          <div className="flexCenter hero-link">
-            <div className="flexColStart h-container">
+          <div className="flexColStart hero-link">
+            <div className="flexCenter h-container">
               <NavLink to="/residencies">
                 <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
                 Residencies
