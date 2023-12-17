@@ -37,20 +37,22 @@ const Hero = () => {
           </div>
 
           <div className="flexCenter hero-link">
-            <NavLink to="/residencies">
-              <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
-              Residencies
-            </NavLink>
+            <div className="flexColStart h-container">
+              <NavLink to="/residencies">
+                <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
+                Residencies
+              </NavLink>
 
-            <NavLink to="/lands">
-              <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
-              Lands
-            </NavLink>
+              <NavLink to="/lands">
+                <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
+                Lands
+              </NavLink>
 
-            <NavLink to="/lands">
-              <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
-              New Projects
-            </NavLink>
+              <NavLink to="/lands">
+                <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
+                New Projects
+              </NavLink>
+            </div>
           </div>
 
           <div className="flexCenter stats">
