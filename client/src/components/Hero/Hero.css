@@ -10,11 +10,6 @@
   align-items: flex-end;
 }
 
-.hero-link {
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .hero-left .h-container {
   gap: 1rem;
   color: white;
