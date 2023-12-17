@@ -13,21 +13,21 @@
 
 .np-card > img {
   width: 100%;
-  max-width: 30rem;
+  max-width: 100rem;
 }
 
 .np-card > :nth-child(2) {
-  font-size: 1.2rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
 .np-card > :nth-child(3) {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .np-card > :nth-child(4) {
-  font-size: 0.7rem;
-  width: 30rem;
+  font-size: 2rem;
+  width: 100rem;
 }
 
 .np-card:hover {
