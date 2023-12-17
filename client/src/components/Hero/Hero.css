@@ -15,7 +15,8 @@
   font-weight: 600;
   font: 600;
   font-size: 1.6rem;
-  gap: 2rem;
+  gap: 1rem;
+  justify-content: space-between;
 }
 /* left side */
 .hero-left {
