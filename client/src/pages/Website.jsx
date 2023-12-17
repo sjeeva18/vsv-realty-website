@@ -8,6 +8,7 @@ import Values from "../components/Values/Values";
 import Lands from "../components/Lands/Lands";
 import Testimonial from "../components/Testimonial/Testimonial";
 import SoldOut from "../components/SoldOut/SoldOut";
+import NewProject from "../components/NewProject/NewProject";
 
 const Website = () => {
   return (
@@ -19,6 +20,7 @@ const Website = () => {
       <Companies />
       <Properties />
       <Lands />
+      <NewProject />
       <Testimonial />
       <Values />
       <SoldOut />
