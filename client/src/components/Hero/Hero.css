@@ -16,6 +16,7 @@
   font-weight: 600;
   font: bold;
   font-size: 1.6rem;
+  flex-direction: column;
   justify-content: space-between;
 }
 /* left side */
