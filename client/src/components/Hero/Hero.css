@@ -11,11 +11,11 @@
 }
 
 .hero-link{
+  gap: 1rem;
   color: white;
   font-weight: 600;
-  font: 600;
+  font: bold;
   font-size: 1.6rem;
-  gap: 1rem;
   justify-content: space-between;
 }
 /* left side */
