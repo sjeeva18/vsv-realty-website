@@ -3,7 +3,6 @@ import "./NewProject.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import data from "../../utils/sliderssss.json";
-import { sliderSettings } from "../../utils/common";
 const NewProject = () => {
   return (
     <section className="np-wrapper">
@@ -12,7 +11,7 @@ const NewProject = () => {
           <span className="primaryText">New Popular Projects</span>
         </div>
 
-        <Swiper {...sliderSettings}>
+        <Swiper>
           {data.map((card, i) => (
             <SwiperSlide key={i}>
               <div className="np-card">
