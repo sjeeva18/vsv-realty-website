@@ -6,7 +6,7 @@ const NewProjectCard = ({ card }) => {
   const navigate = useNavigate();
   return (
     <div
-      className="np-card"
+      className="np-card flexCenter"
       onClick={() => navigate(`../residencies/${card.id}`)}
     >
       <img src={card.image} alt="home" className="flexCenter"/>
