@@ -19,7 +19,9 @@ const NewProjectCard = ({ card }) => {
       <span className="flexCenter primaryText">
         {truncate(card.title, { length: 30 })}
       </span>
-      <span className="flexCenter secondaryText">{truncate(card.address)}</span>
+      <span className="secondaryText flexCenter">
+        {truncate(card.address, { length: 40 })}
+      </span>
     </div>
   );
 };
