@@ -14,7 +14,7 @@ const NewProject = () => {
         <Swiper>
           {data.map((card, i) => (
             <SwiperSlide key={i}>
-              <div className="np-card">
+              <div className="flexCenter np-card">
                 <img src={card.image} alt="project" />
                 <span className="secondaryText np-price">
                   <span style={{ color: "orange" }}>Rs.</span>
