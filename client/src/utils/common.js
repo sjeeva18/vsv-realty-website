@@ -16,7 +16,7 @@ export const sliderSettings = {
 
 export const sliderSettingss = {
   slidesPerView: 1,
-  spaceBetween: 100,
+  spaceBetween: 50,
   breakpoints: {
     480: {
       slidesPerView: 1,
