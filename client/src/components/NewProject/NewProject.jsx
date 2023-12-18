@@ -18,13 +18,13 @@ const NewProject = () => {
                 <span className="flexCenter">
                 <img src={card.image} alt="project" /></span>
 
-                <span className="secondaryText np-price">
+                <span className="secondaryText flexCenter np-price">
                   <span style={{ color: "orange" }}>Rs.</span>
                   <span>{card.price}</span>
                 </span>
 
-                <span className="primaryText">{card.name}</span>
-                <span className="secondaryText">{card.detail}</span>
+                <span className="primaryText flexCenter">{card.name}</span>
+                <span className="secondaryText flexCenter">{card.detail}</span>
               </div>
             </SwiperSlide>
           ))}
