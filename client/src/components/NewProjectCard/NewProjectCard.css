@@ -9,22 +9,23 @@
 }
 
 .np-card > img {
-  width: 40rem;
-  height: 25rem;
+  width: 15rem;
+  height: 10rem;
   border-radius: 10px;
 }
 
 .np-card > :nth-child(2) {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .np-card > :nth-child(3) {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .np-card > :nth-child(4) {
-  font-size: 1rem;
+  font-size: 0.7rem;
+  width: 15rem;
 }
 
 .np-card:hover {
