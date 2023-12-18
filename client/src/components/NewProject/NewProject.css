@@ -13,16 +13,16 @@
 
 .np-card > img {
   width: 100%;
-  max-width: 60rem;
+  max-width: 50rem;
 }
 
 .np-card > :nth-child(2) {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 .np-card > :nth-child(3) {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .np-card > :nth-child(4) {
