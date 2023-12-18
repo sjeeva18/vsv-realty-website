@@ -12,6 +12,7 @@
   width: 15rem;
   height: 10rem;
   border-radius: 10px;
+  justify-content: center;
 }
 
 .np-card > :nth-child(2) {
