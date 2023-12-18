@@ -36,9 +36,8 @@ const NewProject = () => {
     <section className="np-wrapper">
       <div className="paddings innerWidth np-container">
         <div className="np-head flexColStart">
-          <span className="orangeText">Best Choices</span>
           <NavLink to="/residencies">
-            <span className="primaryText">Popular Residencies</span>
+            <span className="primaryText">Popular New Projects</span>
           </NavLink>
         </div>
 
