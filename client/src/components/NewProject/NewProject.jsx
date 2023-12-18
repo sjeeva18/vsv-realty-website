@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./NewProject.css";
-import { sliderSettings } from "../../utils/common";
+
 import useResidencies from "../../hooks/useResidencies";
 import { PuffLoader } from "react-spinners";
 import { NavLink } from "react-router-dom";
@@ -41,7 +41,7 @@ const NewProject = () => {
           </NavLink>
         </div>
 
-        <Swiper {...sliderSettings}>
+        <Swiper>
           <SliderButtons />
           {data.slice(0, 4).map((card, i) => (
             <SwiperSlide key={i}>
