@@ -6,6 +6,7 @@ import useResidencies from "../../hooks/useResidencies";
 import { PuffLoader } from "react-spinners";
 import { NavLink } from "react-router-dom";
 import NewProjectCard from "../NewProjectCard/NewProjectCard";
+import { sliderSettings } from "../../utils/common";
 const NewProject = () => {
   const { data, isError, isLoading } = useResidencies();
 
@@ -40,7 +41,7 @@ const NewProject = () => {
           </NavLink>
         </div>
 
-        <Swiper>
+        <Swiper {...sliderSettings}>
           <SliderButtons />
           {data.slice(0, 4).map((card, i) => (
             <SwiperSlide key={i}>
