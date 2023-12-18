@@ -2,7 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./NewProject.css";
-
 import useResidencies from "../../hooks/useResidencies";
 import { PuffLoader } from "react-spinners";
 import { NavLink } from "react-router-dom";
@@ -35,7 +34,7 @@ const NewProject = () => {
   return (
     <section className="np-wrapper">
       <div className="paddings innerWidth np-container">
-        <div className="np-head flexCenter">
+        <div className="np-head flexColStart">
           <NavLink to="/residencies">
             <span className="primaryText">Popular New Projects</span>
           </NavLink>
