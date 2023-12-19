@@ -48,7 +48,7 @@ const Hero = () => {
                 Lands
               </NavLink>
 
-              <NavLink to="/lands">
+              <NavLink to="/residencies">
                 <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
                 New Projects
               </NavLink>
