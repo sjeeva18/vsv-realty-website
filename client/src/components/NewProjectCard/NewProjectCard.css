@@ -25,6 +25,7 @@
 
 .np-card > :nth-child(4) {
   font-size: 0.7rem;
+  width: 15rem;
 }
 
 .np-card:hover {
