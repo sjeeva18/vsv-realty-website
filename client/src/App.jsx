@@ -14,6 +14,7 @@ import Lands from "./pages/Lands/Lands";
 import Land from "./pages/Land/Land";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Website from "./pages/Website";
+import NewProjects from "./pages/NewProjects/NewProjects";
 function App() {
   const queryClient = new QueryClient();
   return (
@@ -29,6 +30,10 @@ function App() {
               </Route>
               <Route path="/lands">
                 <Route index element={<Lands />} />
+                <Route path=":landId" element={<Land />} />
+              </Route>
+              <Route path="/lands">
+                <Route index element={<NewProjects />} />
                 <Route path=":landId" element={<Land />} />
               </Route>
               <Route path="/aboutus" element={<AboutUs />} />
