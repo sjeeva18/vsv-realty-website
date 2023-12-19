@@ -8,7 +8,7 @@
   z-index: 0;
 }
 
-.np-card .imggg {
+.np-card > img {
   height: 20rem;
   border-radius: 10px;
 }

@@ -9,21 +9,18 @@ const NewProjectCard = ({ card }) => {
       className="np-card"
       onClick={() => navigate(`../residencies/${card.id}`)}
     >
-      <span className="paddings innerWidth flexCenter imggg">
-        <img src={card.image} alt="home" />
-      </span>
+        <img src={card.image} alt="home" className="flexCenter" />
 
-      <span className="paddings innerWidth flexCenter thirdText np-price">
+
+      <span className="flexCenter thirdText np-price">
         <span style={{ color: "goldenrod" }}>Rs.</span>
         <span>{card.price}</span>
       </span>
 
-      <span className="paddings innerWidth flexCenter primaryText">
+      <span className="flexCenter primaryText">
         {truncate(card.title, { length: 20 })}
       </span>
-      <span className="paddings innerWidth flexCenter secondaryText">
-        {truncate(card.address)}
-      </span>
+      <span className="flexCenter secondaryText">{truncate(card.address)}</span>
     </div>
   );
 };
