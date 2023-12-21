@@ -5,7 +5,7 @@ import "./Land.css";
 import { PuffLoader } from "react-spinners";
 import { getLand } from "../../utils/api";
 import { MdLocationPin } from "react-icons/md";
-import { FaCompass } from "react-icons/fa";
+import { FaCheckCircle, FaCompass } from "react-icons/fa";
 import { TbDimensions, TbRoad } from "react-icons/tb";
 import emailjs from "@emailjs/browser";
 
@@ -32,6 +32,15 @@ const Land = () => {
         }
       );
   };
+
+  const [menuOpened, setMenuOpened] = useState(false);
+
+  const getMenuStyles = (menuOpened) => {
+    if (document.documentElement.clientWidth <= 800) {
+      return { right: !menuOpened && "-100%" };
+    }
+  };
+
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
   const { data, isLoading, isError } = useQuery(["land", id], () =>
@@ -134,8 +143,22 @@ const Land = () => {
               <div>
                 <textarea name="user-prop" />
                 <div>
-                  <input type="submit" value="Send" />
-                  <div className="fifthText">{data?.phone}</div>
+                  <input
+                    type="submit"
+                    onOutsideClick={() => {
+                      setMenuOpened(false);
+                    }}
+                    value="Send"
+                    onClick={() => setMenuOpened((prev) => !prev)}
+                  />
+                  <div className="popup">
+                    <FaCheckCircle size={50} className="thankicon" />
+                    <h2>Thank You for Contacting VSV!</h2>
+                    <div>{data?.phone}</div>
+                    <button type="button" onClick="closePopup()">
+                      OK
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
