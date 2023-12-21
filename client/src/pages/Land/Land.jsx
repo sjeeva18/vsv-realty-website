@@ -135,6 +135,7 @@ const Land = () => {
                 <textarea name="user-prop" />
                 <div>
                   <input type="submit" value="Send" />
+                  <div className="fifthText">{data?.phone}</div>
                 </div>
               </div>
             </div>
