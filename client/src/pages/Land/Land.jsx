@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useQuery } from "react-query";
 import { useLocation } from "react-router-dom";
 import "./Land.css";
@@ -34,12 +34,6 @@ const Land = () => {
   };
 
   const [menuOpened, setMenuOpened] = useState(false);
-
-  const getMenuStyles = (menuOpened) => {
-    if (document.documentElement.clientWidth <= 800) {
-      return { right: !menuOpened && "-100%" };
-    }
-  };
 
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
