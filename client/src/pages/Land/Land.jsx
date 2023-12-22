@@ -34,11 +34,6 @@ const Land = () => {
   };
 
   const [menuOpened, setMenuOpened] = useState(false);
-  {
-    document.getElementById("openpopup").addEventListener("click", function () {
-      document.getElementsByClassName("popup")[0];
-    });
-  }
 
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
@@ -151,7 +146,7 @@ const Land = () => {
                     onClick={() => setMenuOpened((prev) => !prev)}
                   />
                   <div className="popup" id="openpopup">
-                    <FaCheckCircle size={50} className="thankicon" />
+                    <FaCheckCircle size={60} className="thankicon" />
                     <h2>Thank You for Contacting VSV!</h2>
                     <div>{data?.phone}</div>
                     <button type="button" onClick="closePopup()">
