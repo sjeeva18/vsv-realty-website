@@ -34,12 +34,11 @@ const Land = () => {
   };
 
   const [menuOpened, setMenuOpened] = useState(false);
-
-  const getMenuStyles = (menuOpened) => {
-    if (document.documentElement.clientWidth <= 800) {
-      return { right: !menuOpened && "-100%" };
-    }
-  };
+  {
+    document.getElementById("openpopup").addEventListener("click", function () {
+      document.getElementsByClassName("popup")[0].classList.add("active");
+    });
+  }
 
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
@@ -150,9 +149,8 @@ const Land = () => {
                     }}
                     value="Send"
                     onClick={() => setMenuOpened((prev) => !prev)}
-                    style={getMenuStyles(menuOpened)}
                   />
-                  <div className="popup">
+                  <div className="popup" id="openpopup">
                     <FaCheckCircle size={50} className="thankicon" />
                     <h2>Thank You for Contacting VSV!</h2>
                     <div>{data?.phone}</div>
