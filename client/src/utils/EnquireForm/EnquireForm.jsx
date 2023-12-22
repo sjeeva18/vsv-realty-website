@@ -31,13 +31,13 @@ const EnquireForm = () => {
   const openPopup = document
     .querySelector("#openPopup")
     .addEventListener("click", function () {
-      popup.classList.add("show");
+      console.log(popup.classList.add("show"));
     });
   const popup = document.getElementById("popup");
   const closePopup = document
     .querySelector("#closePopup")
-    .removeEventListener("click", function () {
-      popup.classList.remove("show");
+    .addEventListener("click", function () {
+      console.log(popup.classList.remove("show"));
     });
 
   result(

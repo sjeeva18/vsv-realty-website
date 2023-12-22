@@ -13,7 +13,7 @@
   transition: transform 0.4ss, top 0.4s;
 }
 
-.popup .show {
+.popup.show {
   pointer-events: auto;
   opacity: 1;
 }
