@@ -5,43 +5,11 @@ import "./Land.css";
 import { PuffLoader } from "react-spinners";
 import { getLand } from "../../utils/api";
 import { MdLocationPin } from "react-icons/md";
-import { FaCheckCircle, FaCompass } from "react-icons/fa";
+import { FaCompass } from "react-icons/fa";
 import { TbDimensions, TbRoad } from "react-icons/tb";
-import emailjs from "@emailjs/browser";
+import EnquireForm from "../../utils/EnquireForm/EnquireForm";
 
 const Land = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_n6cdqef",
-        "template_0k9z2bj",
-        form.current,
-        "5-hSzXVKfTZE_w87n"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
-  const [setMenuOpened] = useState(false);
-  let popup = document.getElementById("popup");
-  function openPopup() {
-    popup.classList.add("open-popup");
-  }
-  function closePopup() {
-    popup.classList.remove("open-popup");
-  }
-
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
   const { data, isLoading, isError } = useQuery(["land", id], () =>
@@ -120,50 +88,9 @@ const Land = () => {
                 <div>{data?.city}</div>
                 <div>{data?.state}</div>
               </div>
+              <EnquireForm />
             </div>
           </div>
-        </div>
-
-        <div className="paddings innerWidth e-container">
-          <span className="enquiryText">Enquire to Get Number</span>
-          <form ref={form} onSubmit={sendEmail}>
-            <div>
-              <label className="thirdText">Name</label>
-              <div>
-                <input type="text" name="user_name" />
-              </div>
-            </div>
-            <div>
-              <label className="thirdText">Phone Number</label>
-              <div>
-                <input type="number" name="user_phone" />
-              </div>
-            </div>
-            <div>
-              <label className="thirdText">Property Name</label>
-              <div>
-                <textarea name="user-prop" />
-                <div>
-                  <input
-                    type="submit"
-                    onOutsideClick={() => {
-                      setMenuOpened(false);
-                    }}
-                    value="Send"
-                    onClick="openPopup"
-                  />
-                  <div className="popup" id="popup">
-                    <FaCheckCircle size={60} className="thankicon" />
-                    <h2>Thank You for Contacting VSV!</h2>
-                    <div>{data?.phone}</div>
-                    <button type="button" onClick="closePopup()">
-                      OK
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </div>
