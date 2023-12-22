@@ -30,13 +30,13 @@ const EnquireForm = () => {
   const [setMenuOpened] = useState(false);
   const openPopup = document
     .getElementById("openPopup")
-    .addEventListener('click', function () {
+    .addEventListener('click', () => {
       popup.classList.add("show");
     });
   const popup = document.getElementById("popup");
   const closePopup = document
     .getElementById("closePopup")
-    .addEventListener('click', function () {
+    .addEventListener('click', () => {
       popup.classList.remove("show");
     });
 
@@ -67,7 +67,7 @@ const EnquireForm = () => {
                   setMenuOpened(false);
                 }}
                 value="Send"
-                onClick="openPopup()"
+                onClick="openPop"
               />
               <div className="popup" id="popup">
                 <FaCheckCircle size={60} className="thankicon" />
