@@ -35,6 +35,12 @@ const Land = () => {
 
   const [menuOpened, setMenuOpened] = useState(false);
 
+  const getMenuStyles = (menuOpened) => {
+    if (document.documentElement.clientWidth <= 800) {
+      return { right: !menuOpened && "-100%" };
+    }
+  };
+
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
   const { data, isLoading, isError } = useQuery(["land", id], () =>
@@ -144,6 +150,7 @@ const Land = () => {
                     }}
                     value="Send"
                     onClick={() => setMenuOpened((prev) => !prev)}
+                    style={getMenuStyles(menuOpened)}
                   />
                   <div className="popup">
                     <FaCheckCircle size={50} className="thankicon" />
