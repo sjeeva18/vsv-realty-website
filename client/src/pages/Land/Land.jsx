@@ -36,7 +36,7 @@ const Land = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   {
     document.getElementById("openpopup").addEventListener("click", function () {
-      document.getElementsByClassName("popup")[0].classList.add("active");
+      document.getElementsByClassName("popup")[0];
     });
   }
 
