@@ -28,9 +28,9 @@ const EnquireForm = () => {
   };
 
   const [setMenuOpened] = useState(false);
-  const openPopup = document.getElementById("openPopup");
-  const popup = document.getElementById("popup");
-  const closePopup = document.getElementById("closePopup");
+  const openPopup = document.querySelector(".openPopup");
+  const popup = document.querySelector(".popup");
+  const closePopup = document.querySelector(".closePopup");
 
   open.addEventListener("click", () => {
     popup.classList.add("show");
