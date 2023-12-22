@@ -30,13 +30,13 @@ const EnquireForm = () => {
   const [setMenuOpened] = useState(false);
   const openPopup = document
     .getElementById("openPopup")
-    .addEventListener("click", () => {
+    .addEventListener("click", function () {
       popup.classList.add("show");
     });
   const popup = document.getElementById("popup");
   const closePopup = document
     .getElementById("closePopup")
-    .addEventListener("click", () => {
+    .addEventListener("click", function () {
       popup.classList.remove("show");
     });
 
