@@ -29,15 +29,15 @@ const EnquireForm = () => {
 
   const [setMenuOpened] = useState(false);
   const openPopup = document
-    .querySelector("#openPopup")
+    .getElementById("openPopup")
     .addEventListener("click", function () {
-      console.log(popup.classList.add("show"));
+      popup.classList.add("show");
     });
   const popup = document.getElementById("popup");
   const closePopup = document
-    .querySelector("#closePopup")
+    .getElementById("closePopup")
     .addEventListener("click", function () {
-      console.log(popup.classList.remove("show"));
+      popup.classList.remove("show");
     });
 
   result(
