@@ -28,17 +28,15 @@ const EnquireForm = () => {
   };
 
   const [setMenuOpened] = useState(false);
-  const openPopup = document
-    .getElementById("openPopup")
-    .addEventListener("click", () => {
-      popup.classList.add("show");
-    });
-  const popup = document.getElementById("popup");
-  const closePopup = document
-    .getElementById("closePopup")
-    .addEventListener("click", () => {
-      popup.classList.remove("show");
-    });
+  const openPopup = document.querySelector(".openPopup");
+  const closePopup = document.querySelector(".closePopup");
+
+  openPopup.addEventListener("click", function () {
+    popup.classList.add("show");
+  });
+  closePopup.addEventListener("click", function () {
+    popup.classList.remove("show");
+  });
 
   result(
     <div className="paddings innerWidth e-container">
