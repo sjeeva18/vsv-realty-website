@@ -32,12 +32,13 @@ const EnquireForm = () => {
   const popup = document.querySelector(".popup");
   const closePopup = document.querySelector(".closePopup");
 
-  openPopup.onclick = () => {
+  openPopup?.addEventListener("click", function () {
     popup.classList.add("show");
-  };
-  closePopup.onclick = () => {
+  });
+
+  closePopup?.addEventListener("click", function () {
     popup.classList.remove("show");
-  };
+  });
 
   return (
     <div className="paddings innerWidth e-container">
@@ -62,7 +63,7 @@ const EnquireForm = () => {
             <div>
               <input
                 type="submit"
-                className="openPopup"
+                onClick="openPopup"
                 onOutsideClick={() => {
                   setMenuOpened(false);
                 }}
@@ -71,7 +72,7 @@ const EnquireForm = () => {
               <div className="popup show">
                 <FaCheckCircle size={60} className="thankicon" />
                 <h2>Thank You for Contacting VSV!</h2>
-                <button type="button" className="closePopup">
+                <button type="button" onClick="closePopup">
                   OK
                 </button>
               </div>
