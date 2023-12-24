@@ -28,14 +28,14 @@ const EnquireForm = () => {
   };
 
   const [setMenuOpened] = useState(false);
-  const openPopup = document.getElementById("openPopup");
-  const closePopup = document.getElementById("closePopup");
+  const openPopup = document.querySelector("#openPopup");
+  const closePopup = document.querySelector("#closePopup");
 
-  openPopup.addEventListener("click", function () {
+  openPopup?.addEventListener("click", function () {
     popup.classList.add("show");
   });
 
-  closePopup.addEventListener("click", function () {
+  closePopup?.addEventListener("click", function () {
     popup.classList.remove("show");
   });
 
