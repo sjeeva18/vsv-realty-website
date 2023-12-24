@@ -88,7 +88,6 @@ const Land = () => {
                 <div>{data?.city}</div>
                 <div>{data?.state}</div>
               </div>
-              <EnquireForm />
             </div>
           </div>
         </div>
