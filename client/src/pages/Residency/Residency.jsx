@@ -172,7 +172,6 @@ const Residency = () => {
           </div>
         </form>
       </div>
-      <EnquireForm />
     </div>
   );
 };
