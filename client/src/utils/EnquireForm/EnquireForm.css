@@ -19,10 +19,9 @@
 }
 
 .popup .thankicon {
-  width: 100px;
+  width: 400px;
   color: goldenrod;
   margin-top: -100px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .popup h2 {
