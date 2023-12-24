@@ -3,6 +3,7 @@ import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
 import { FaCheckCircle } from "react-icons/fa";
 import { getLand } from "../api";
+import { useLocation } from "react-router-dom";
 
 const EnquireForm = () => {
   const form = useRef();
