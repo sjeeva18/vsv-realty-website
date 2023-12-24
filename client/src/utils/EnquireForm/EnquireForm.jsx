@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
 import { FaCheckCircle } from "react-icons/fa";
+import { getLand } from "../api";
 
 const EnquireForm = () => {
   const form = useRef();
@@ -39,6 +40,11 @@ const EnquireForm = () => {
   closePopup?.addEventListener("click", function () {
     popup.classList.remove("show");
   });
+
+  const { pathname } = useLocation();
+  const id = pathname.split("/").slice(-1)[0];
+  const { data } = useQuery(["land", id], () => getLand(id));
+  console.log(data);
 
   return (
     <div className="paddings innerWidth e-container">
