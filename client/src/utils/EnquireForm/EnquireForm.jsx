@@ -62,11 +62,11 @@ const EnquireForm = () => {
             <div>
               <input
                 type="submit"
+                onClick="openPopup"
                 onOutsideClick={() => {
                   setMenuOpened(false);
                 }}
                 value="Send"
-                onClick="openPopup"
               />
               <div className="popup" id="popup">
                 <FaCheckCircle size={60} className="thankicon" />
