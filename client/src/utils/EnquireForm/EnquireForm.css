@@ -14,8 +14,8 @@
 }
 
 .popup.show {
-  pointer-events: auto;
   opacity: 1;
+  pointer-events: auto;
 }
 
 .popup .thankicon {
