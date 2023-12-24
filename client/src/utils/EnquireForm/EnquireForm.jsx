@@ -28,20 +28,16 @@ const EnquireForm = () => {
   };
 
   const [setMenuOpened] = useState(false);
-  const openPopup = document.querySelector("#openPopup");
-  const closePopup = document.querySelector("#closePopup");
+  const openPopup = document.getElementById("openPopup");
+  const closePopup = document.getElementById("closePopup");
 
-  if (openPopup) {
-    openPopup.addEventListener("click", function () {
-      popup.classList.add("show");
-    });
-  }
+  openPopup.addEventListener("click", function () {
+    popup.classList.add("show");
+  });
 
-  if (closePopup) {
-    closePopup.addEventListener("click", function () {
-      popup.classList.remove("show");
-    });
-  }
+  closePopup.addEventListener("click", function () {
+    popup.classList.remove("show");
+  });
 
   return (
     <div className="paddings innerWidth e-container">
@@ -70,12 +66,12 @@ const EnquireForm = () => {
                   setMenuOpened(false);
                 }}
                 value="Send"
-                onClick="openPop"
+                onClick="openPopup"
               />
               <div className="popup" id="popup">
                 <FaCheckCircle size={60} className="thankicon" />
                 <h2>Thank You for Contacting VSV!</h2>
-                <button type="button" onClick="closePopup()">
+                <button type="button" onClick="closePopup">
                   OK
                 </button>
               </div>
