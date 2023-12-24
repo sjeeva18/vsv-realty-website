@@ -7,6 +7,7 @@ import { getLand } from "../../utils/api";
 import { MdLocationPin } from "react-icons/md";
 import { FaCompass } from "react-icons/fa";
 import { TbDimensions, TbRoad } from "react-icons/tb";
+import EnquireForm from "../../utils/EnquireForm/EnquireForm";
 
 const Land = () => {
   const { pathname } = useLocation();
@@ -87,6 +88,7 @@ const Land = () => {
                 <div>{data?.city}</div>
                 <div>{data?.state}</div>
               </div>
+              <EnquireForm />
             </div>
           </div>
         </div>
