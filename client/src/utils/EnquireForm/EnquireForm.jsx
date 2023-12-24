@@ -31,13 +31,17 @@ const EnquireForm = () => {
   const openPopup = document.querySelector(".openPopup");
   const closePopup = document.querySelector(".closePopup");
 
-  openPopup?.addEventListener("click", function () {
-    popup.classList.add("show");
-  });
-  closePopup?.addEventListener("click", function () {
-    popup.classList.remove("show");
-  });
+  if (openPopup) {
+    openPopup.addEventListener("click", function () {
+      popup.classList.add("show");
+    });
+  }
 
+  if (closePopup) {
+    closePopup.addEventListener("click", function () {
+      popup.classList.remove("show");
+    });
+  }
   result(
     <div className="paddings innerWidth e-container">
       <span className="enquiryText">Enquire to Get Number</span>
