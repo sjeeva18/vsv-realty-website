@@ -70,7 +70,7 @@ const EnquireForm = () => {
                 value="Send"
               />
               <div className="popup show">
-                <FaCheckCircle size={60} className="thankicon" />
+                <FaCheckCircle size={80} className="thankicon" />
                 <h2>Thank You for Contacting VSV!</h2>
                 <button type="button" onClick="closePopup">
                   OK
