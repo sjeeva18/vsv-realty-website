@@ -42,47 +42,50 @@ const EnquireForm = () => {
       popup.classList.remove("show");
     });
   }
-  <div className="paddings innerWidth e-container">
-    <span className="enquiryText">Enquire to Get Number</span>
-    <form ref={form} onSubmit={sendEmail}>
-      <div>
-        <label className="thirdText">Name</label>
+
+  return (
+    <div className="paddings innerWidth e-container">
+      <span className="enquiryText">Enquire to Get Number</span>
+      <form ref={form} onSubmit={sendEmail}>
         <div>
-          <input type="text" name="user_name" />
-        </div>
-      </div>
-      <div>
-        <label className="thirdText">Phone Number</label>
-        <div>
-          <input type="number" name="user_phone" />
-        </div>
-      </div>
-      <div>
-        <label className="thirdText">Property Name</label>
-        <div>
-          <textarea name="user-prop" />
+          <label className="thirdText">Name</label>
           <div>
-            <input
-              type="submit"
-              onOutsideClick={() => {
-                setMenuOpened(false);
-              }}
-              value="Send"
-              onClick="openPop"
-            />
-            <div className="popup" id="popup">
-              <FaCheckCircle size={60} className="thankicon" />
-              <h2>Thank You for Contacting VSV!</h2>
-              <div>{data?.phone}</div>
-              <button type="button" onClick="closePopup()">
-                OK
-              </button>
+            <input type="text" name="user_name" />
+          </div>
+        </div>
+        <div>
+          <label className="thirdText">Phone Number</label>
+          <div>
+            <input type="number" name="user_phone" />
+          </div>
+        </div>
+        <div>
+          <label className="thirdText">Property Name</label>
+          <div>
+            <textarea name="user-prop" />
+            <div>
+              <input
+                type="submit"
+                onOutsideClick={() => {
+                  setMenuOpened(false);
+                }}
+                value="Send"
+                onClick="openPop"
+              />
+              <div className="popup" id="popup">
+                <FaCheckCircle size={60} className="thankicon" />
+                <h2>Thank You for Contacting VSV!</h2>
+                <div>{data?.phone}</div>
+                <button type="button" onClick="closePopup()">
+                  OK
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </form>
-  </div>;
+      </form>
+    </div>
+  );
 };
 
 export default EnquireForm;
