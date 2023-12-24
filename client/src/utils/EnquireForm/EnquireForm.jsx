@@ -72,7 +72,7 @@ const EnquireForm = () => {
               <div className="popup flexColStart show">
                 <FaCheckCircle size={100} className="thankicon" />
                 <h2>Thank You for Contacting VSV!</h2>
-                <button className="button" onClick="closePopup">
+                <button className="button flexCenter" onClick="closePopup">
                   OK
                 </button>
               </div>

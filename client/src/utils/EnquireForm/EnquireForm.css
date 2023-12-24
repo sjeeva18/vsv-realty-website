@@ -19,8 +19,9 @@
 
 .popup .thankicon {
   width: 400px;
+  justify-content: center;
   color: goldenrod;
-  margin-top: -100px;
+  margin-top: -80px;
 }
 
 .popup h2 {
