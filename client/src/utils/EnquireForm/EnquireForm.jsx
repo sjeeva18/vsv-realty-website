@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
+import { FaCheckCircle } from "react-icons/fa";
 
 const EnquireForm = () => {
   const form = useRef();
@@ -26,6 +27,21 @@ const EnquireForm = () => {
       );
   };
 
+  const [setMenuOpened] = useState(false);
+  const openPopup = document.querySelector("#openPopup");
+  const closePopup = document.querySelector("#closePopup");
+
+  if (openPopup) {
+    openPopup.addEventListener("click", function () {
+      popup.classList.add("show");
+    });
+  }
+
+  if (closePopup) {
+    closePopup.addEventListener("click", function () {
+      popup.classList.remove("show");
+    });
+  }
   <div className="paddings innerWidth e-container">
     <span className="enquiryText">Enquire to Get Number</span>
     <form ref={form} onSubmit={sendEmail}>
@@ -46,15 +62,22 @@ const EnquireForm = () => {
         <div>
           <textarea name="user-prop" />
           <div>
-            <input type="submit" value="Send" />
-            {/* <div className="popup" id="popup">
-                <FaCheckCircle size={60} className="thankicon" />
-                <h2>Thank You for Contacting VSV!</h2>
-                <div>{data?.phone}</div>
-                <button type="button" onClick="closePopup()">
-                  OK
-                </button>
-              </div> */}
+            <input
+              type="submit"
+              onOutsideClick={() => {
+                setMenuOpened(false);
+              }}
+              value="Send"
+              onClick="openPop"
+            />
+            <div className="popup" id="popup">
+              <FaCheckCircle size={60} className="thankicon" />
+              <h2>Thank You for Contacting VSV!</h2>
+              <div>{data?.phone}</div>
+              <button type="button" onClick="closePopup()">
+                OK
+              </button>
+            </div>
           </div>
         </div>
       </div>
