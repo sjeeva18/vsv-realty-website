@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
 
-
 const EnquireForm = () => {
   const form = useRef();
 
@@ -27,29 +26,28 @@ const EnquireForm = () => {
       );
   };
 
-  result(
-    <div className="paddings innerWidth e-container">
-      <span className="enquiryText">Enquire to Get Number</span>
-      <form ref={form} onSubmit={sendEmail}>
+  <div className="paddings innerWidth e-container">
+    <span className="enquiryText">Enquire to Get Number</span>
+    <form ref={form} onSubmit={sendEmail}>
+      <div>
+        <label className="thirdText">Name</label>
         <div>
-          <label className="thirdText">Name</label>
-          <div>
-            <input type="text" name="user_name" />
-          </div>
+          <input type="text" name="user_name" />
         </div>
+      </div>
+      <div>
+        <label className="thirdText">Phone Number</label>
         <div>
-          <label className="thirdText">Phone Number</label>
-          <div>
-            <input type="number" name="user_phone" />
-          </div>
+          <input type="number" name="user_phone" />
         </div>
+      </div>
+      <div>
+        <label className="thirdText">Property Name</label>
         <div>
-          <label className="thirdText">Property Name</label>
+          <textarea name="user-prop" />
           <div>
-            <textarea name="user-prop" />
-            <div>
-              <input type="submit" value="Send" />
-              {/* <div className="popup" id="popup">
+            <input type="submit" value="Send" />
+            {/* <div className="popup" id="popup">
                 <FaCheckCircle size={60} className="thankicon" />
                 <h2>Thank You for Contacting VSV!</h2>
                 <div>{data?.phone}</div>
@@ -57,12 +55,11 @@ const EnquireForm = () => {
                   OK
                 </button>
               </div> */}
-            </div>
           </div>
         </div>
-      </form>
-    </div>
-  );
+      </div>
+    </form>
+  </div>;
 };
 
 export default EnquireForm;
