@@ -31,10 +31,10 @@ const EnquireForm = () => {
   const openPopup = document.querySelector(".openPopup");
   const closePopup = document.querySelector(".closePopup");
 
-  openPopup.addEventListener("click", function () {
+  openPopup?.addEventListener("click", function () {
     popup.classList.add("show");
   });
-  closePopup.addEventListener("click", function () {
+  closePopup?.addEventListener("click", function () {
     popup.classList.remove("show");
   });
 
