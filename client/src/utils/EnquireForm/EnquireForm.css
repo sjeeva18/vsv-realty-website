@@ -2,7 +2,7 @@
   width: 400px;
   background: #fff;
   border-radius: 6px;
-  position: absolute;
+  position: relative;
   display: flex;
   text-align: center;
   align-items: center;
