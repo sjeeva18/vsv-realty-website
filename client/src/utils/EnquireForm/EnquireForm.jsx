@@ -28,8 +28,9 @@ const EnquireForm = () => {
   };
 
   const [setMenuOpened] = useState(false);
-  const openPopup = document.querySelector("#openPopup");
-  const closePopup = document.querySelector("#closePopup");
+  const openPopup = document.querySelector(".openPopup");
+  const popup = document.querySelector(".popup")
+  const closePopup = document.querySelector(".closePopup");
 
   openPopup?.addEventListener("click", function () {
     popup.classList.add("show");
@@ -68,7 +69,7 @@ const EnquireForm = () => {
                 }}
                 value="Send"
               />
-              <div className="popup" id="popup">
+              <div className="popup show" id="popup">
                 <FaCheckCircle size={60} className="thankicon" />
                 <h2>Thank You for Contacting VSV!</h2>
                 <button type="button" onClick="closePopup">
