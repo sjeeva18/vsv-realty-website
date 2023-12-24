@@ -9,13 +9,13 @@
   text-align: center;
   padding: 0 30px 30px;
   color: #333;
-  opacity: 0;
-  transition: transform 0.4ss, top 0.4s;
+  pointer-events: none;
 }
 
-.popup.show {
+.popup .show {
   opacity: 1;
   pointer-events: auto;
+  transition: 0.4s ease;
 }
 
 .popup .thankicon {
