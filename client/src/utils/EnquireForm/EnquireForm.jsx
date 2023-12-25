@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
 import { FaCheckCircle } from "react-icons/fa";
@@ -27,7 +27,6 @@ const EnquireForm = () => {
       );
   };
 
-  const [setMenuOpened] = useState(false);
   const openPopup = document.querySelector(".openPopup");
   const popup = document.querySelector(".popup");
   const closePopup = document.querySelector(".closePopup");
@@ -61,14 +60,7 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <input
-                type="submit"
-                onClick="openPopup"
-                onOutsideClick={() => {
-                  setMenuOpened(false);
-                }}
-                value="Send"
-              />
+              <input type="submit" onClick="openPopup" value="Send" />
               <div className="popup">
                 <FaCheckCircle size={100} className="thankicon" />
                 <h2>Thank You for Contacting VSV!</h2>
