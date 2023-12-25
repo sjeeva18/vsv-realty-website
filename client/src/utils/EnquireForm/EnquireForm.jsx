@@ -53,7 +53,7 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <Button onClick={handleShow}>
+              <Button variant="primary" onClick={handleShow}>
                 <input type="submit" value="Send" />
               </Button>
 
