@@ -60,20 +60,22 @@ const EnquireForm = () => {
           <label className="thirdText">Property Name</label>
           <div>
             <textarea name="user-prop" />
-            <input
-              type="submit"
-              onClick="openPopup"
-              onOutsideClick={() => {
-                setMenuOpened(false);
-              }}
-              value="Send"
-            />
-            <div className="popup show">
-              <FaCheckCircle size={100} className="thankicon" />
-              <h2>Thank You for Contacting VSV!</h2>
-              <button className="button" onClick="closePopup">
-                OK
-              </button>
+            <div>
+              <input
+                type="submit"
+                onClick="openPopup"
+                onOutsideClick={() => {
+                  setMenuOpened(false);
+                }}
+                value="Send"
+              />
+              <div className="popup show">
+                <FaCheckCircle size={100} className="thankicon" />
+                <h2>Thank You for Contacting VSV!</h2>
+                <button className="button" onClick="closePopup">
+                  OK
+                </button>
+              </div>
             </div>
           </div>
         </div>
