@@ -48,9 +48,7 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <BootstrapModal>
-                <input type="submit" value="Send" />
-              </BootstrapModal>
+              <input type="submit" value="Send" />
             </div>
           </div>
         </div>
