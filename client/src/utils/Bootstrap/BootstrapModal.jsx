@@ -10,7 +10,7 @@ function BootstrapModal() {
 
   return (
     <>
-      <Button className="button" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
 
@@ -20,10 +20,10 @@ function BootstrapModal() {
         </Modal.Header>
         <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-          <Button className="button" onClick={handleClose}>
+          <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button className="button" onClick={handleClose}>
+          <Button variant="primary" onClick={handleClose}>
             Save Changes
           </Button>
         </Modal.Footer>

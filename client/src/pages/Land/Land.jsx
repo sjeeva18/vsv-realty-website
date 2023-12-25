@@ -7,7 +7,7 @@ import { getLand } from "../../utils/api";
 import { MdLocationPin } from "react-icons/md";
 import { FaCompass } from "react-icons/fa";
 import { TbDimensions, TbRoad } from "react-icons/tb";
-import Muipopup from "../../utils/muipopup/muipopup";
+import BootstrapModal from "../../utils/Bootstrap/BootstrapModal";
 
 const Land = () => {
   const { pathname } = useLocation();
@@ -91,7 +91,7 @@ const Land = () => {
             </div>
           </div>
         </div>
-        <Muipopup />
+        <BootstrapModal />
       </div>
     </div>
   );
