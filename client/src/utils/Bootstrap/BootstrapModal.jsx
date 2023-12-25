@@ -10,7 +10,7 @@ function BootstrapModal() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className="button" onClick={handleShow}>
         Launch demo modal
       </Button>
 
