@@ -2,8 +2,6 @@ import React, { useRef, useState } from "react";
 import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
 import { FaCheckCircle } from "react-icons/fa";
-import { getLand } from "../api";
-import { useLocation } from "react-router-dom";
 
 const EnquireForm = () => {
   const form = useRef();
@@ -42,11 +40,6 @@ const EnquireForm = () => {
     popup.classList.remove("show");
   });
 
-  const { pathname } = useLocation();
-  const id = pathname.split("/").slice(-1)[0];
-  const { data } = useQuery(["land", id], () => getLand(id));
-  console.log(data);
-
   return (
     <div className="paddings innerWidth e-container">
       <span className="enquiryText">Enquire to Get Number</span>
@@ -76,11 +69,11 @@ const EnquireForm = () => {
                 }}
                 value="Send"
               />
-              <div className="popup flexColStart show">
-                <FaCheckCircle size={100} className="thankicon" />
+              <div className="popup show">
+                <FaCheckCircle size={30} className="thankicon" />
                 <h2>Thank You for Contacting VSV!</h2>
                 <div>{data?.phone}</div>
-                <button className="button flexCenter" onClick="closePopup">
+                <button className="button" onClick="closePopup">
                   OK
                 </button>
               </div>
