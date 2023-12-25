@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
-import BootstrapModal from "../Bootstrap/BootstrapModal";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const EnquireForm = () => {
   const form = useRef();
@@ -27,6 +29,10 @@ const EnquireForm = () => {
       );
   };
 
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className="paddings innerWidth e-container">
       <span className="enquiryText">Enquire to Get Number</span>
@@ -48,7 +54,26 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <input type="submit" value="Send" />
+              <Button variant="primary" onClick={handleShow}>
+                <input type="submit" value="Send" />
+              </Button>
+
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  Woohoo, you are reading this text in a modal!
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                  <Button variant="primary" onClick={handleClose}>
+                    Save Changes
+                  </Button>
+                </Modal.Footer>
+              </Modal>
             </div>
           </div>
         </div>
