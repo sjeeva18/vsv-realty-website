@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./BootstrapModal.css"
 import Modal from "react-bootstrap/Modal";
 
 
