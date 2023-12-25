@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
