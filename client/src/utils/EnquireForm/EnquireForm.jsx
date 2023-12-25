@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useLocation } from "react-router-dom";
+import { useQuery } from "react-query";
 
 const EnquireForm = () => {
   const form = useRef();
@@ -31,6 +33,11 @@ const EnquireForm = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const { pathname } = useLocation();
+  const id = pathname.split("/").slice(-1)[0];
+  const { data } = useQuery(["land", id], () => getLand(id));
+  console.log(data);
 
   return (
     <div className="paddings innerWidth e-container">
@@ -61,9 +68,7 @@ const EnquireForm = () => {
                 <Modal.Header closeButton>
                   <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
-                  Woohoo, you are reading this text in a modal!
-                </Modal.Body>
+                <Modal.Body>{data?.phone}</Modal.Body>
                 <Modal.Footer>
                   <Button variant="secondary" onClick={handleClose}>
                     Close
