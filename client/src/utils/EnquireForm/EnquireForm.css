@@ -10,7 +10,6 @@
   padding: 0 30px 30px;
   color: #333;
   opacity: 0;
-  pointer-events: none;
 }
 
 .popup .show {
