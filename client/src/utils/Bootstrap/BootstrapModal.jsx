@@ -5,13 +5,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function BootstrapModal() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className="button" onClick={handleShow}>
         Launch demo modal
       </Button>
 
@@ -21,10 +20,10 @@ function BootstrapModal() {
         </Modal.Header>
         <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button className="button" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button className="button" onClick={handleClose}>
             Save Changes
           </Button>
         </Modal.Footer>
