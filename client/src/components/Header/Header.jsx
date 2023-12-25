@@ -24,12 +24,22 @@ const Header = () => {
           }}
         >
           <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-            <NavLink to="/residencies">Residencies</NavLink>
-            <NavLink to="/lands">Lands</NavLink>
-            <NavLink to="/residencies">New Projects</NavLink>
-            <NavLink to="/aboutus">About Us</NavLink>
+            <NavLink to="/residencies" color="white">
+              Residencies
+            </NavLink>
+            <NavLink to="/lands" color="white">
+              Lands
+            </NavLink>
+            <NavLink to="/residencies" color="white">
+              New Projects
+            </NavLink>
+            <NavLink to="/aboutus" color="white">
+              About Us
+            </NavLink>
             <button className="button">
-              <a href="tel:8190038839">Contact</a>
+              <a href="tel:8190038839" color="white">
+                Contact
+              </a>
             </button>
           </div>
         </OutsideClickHandler>
