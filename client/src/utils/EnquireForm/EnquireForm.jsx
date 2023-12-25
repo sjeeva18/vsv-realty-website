@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./EnquireForm.css";
 import emailjs from "@emailjs/browser";
-import { FaCheckCircle } from "react-icons/fa";
+import BootstrapModal from "../Bootstrap/BootstrapModal";
 
 const EnquireForm = () => {
   const form = useRef();
@@ -48,7 +48,9 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <input type="submit" value="Send" />
+              <BootstrapModal>
+                <input type="submit" value="Send" />
+              </BootstrapModal>
             </div>
           </div>
         </div>
