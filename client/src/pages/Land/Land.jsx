@@ -7,7 +7,7 @@ import { getLand } from "../../utils/api";
 import { MdLocationPin } from "react-icons/md";
 import { FaCompass } from "react-icons/fa";
 import { TbDimensions, TbRoad } from "react-icons/tb";
-import BootstapModal from "../../utils/Bootstrap/BootstrapModal";
+import BootstrapModal from "../../utils/Bootstrap/BootstrapModal";
 
 const Land = () => {
   const { pathname } = useLocation();
@@ -89,7 +89,7 @@ const Land = () => {
                 <div>{data?.state}</div>
               </div>
             </div>
-            <BootstapModal />
+            <BootstrapModal />
           </div>
         </div>
       </div>
