@@ -3,7 +3,7 @@ import "./Header.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import OutsideClickHandler from "react-outside-click-handler";
 import { Link, NavLink } from "react-router-dom";
-const Headers = () => {
+const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
 
   const getMenuStyles = (menuOpened) => {
@@ -44,4 +44,4 @@ const Headers = () => {
   );
 };
 
-export default Headers;
+export default Header;
