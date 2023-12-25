@@ -27,18 +27,6 @@ const EnquireForm = () => {
       );
   };
 
-  const openPopup = document.querySelector(".openPopup");
-  const popup = document.querySelector(".popup");
-  const closePopup = document.querySelector(".closePopup");
-
-  openPopup?.addEventListener("click", function () {
-    popup.classList.add("show");
-  });
-
-  closePopup?.addEventListener("click", function () {
-    popup.classList.remove("show");
-  });
-
   return (
     <div className="paddings innerWidth e-container">
       <span className="enquiryText">Enquire to Get Number</span>
@@ -60,14 +48,7 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <input type="submit" onClick="openPopup" value="Send" />
-              <div className="popup">
-                <FaCheckCircle size={100} className="thankicon" />
-                <h2>Thank You for Contacting VSV!</h2>
-                <button className="button" onClick="closePopup">
-                  OK
-                </button>
-              </div>
+              <input type="submit" value="Send" />
             </div>
           </div>
         </div>
