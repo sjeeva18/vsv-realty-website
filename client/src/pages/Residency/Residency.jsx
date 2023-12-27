@@ -18,6 +18,7 @@ import { GiWindow } from "react-icons/gi";
 import EnquireFormResd from "../../utils/EnquireForm/EnquireFormResd";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { sliderSettingss } from "../../utils/common";
+import Slideshow from "../ImageSlideResd/ImageSlideResd";
 
 const Residency = () => {
   const [show, setShow] = useState(true);
@@ -49,7 +50,7 @@ const Residency = () => {
   return (
     <div className="wrapper">
       <div className="flexColStart paddings innerWidth residency-container">
-        <img src={data?.image1} alt="residency image" />
+        <Slideshow />
         {/*}  <Swiper>
           <SwiperSlide>
             <img src={data?.image1} alt="residency image" />
