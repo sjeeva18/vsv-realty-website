@@ -16,6 +16,7 @@ import {
 import { TbStairs } from "react-icons/tb";
 import { GiWindow } from "react-icons/gi";
 import EnquireFormResd from "../../utils/EnquireForm/EnquireFormResd";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const Residency = () => {
   const [show, setShow] = useState(true);

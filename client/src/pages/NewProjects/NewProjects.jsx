@@ -16,6 +16,7 @@ import {
 import { TbStairs } from "react-icons/tb";
 import { GiWindow } from "react-icons/gi";
 import emailjs from "@emailjs/browser";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const NewProjects = () => {
   const form = useRef();
