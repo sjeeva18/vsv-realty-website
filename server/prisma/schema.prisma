@@ -28,7 +28,11 @@ model Residency {
     address     String
     city        String
     state       String
-    image       String
+    image1      String
+    image2      String
+    image3      String
+    image4      String
+    image5      String
     facilities  Json
     phone       String
     userEmail   String

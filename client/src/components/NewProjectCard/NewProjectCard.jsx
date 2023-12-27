@@ -9,7 +9,7 @@ const NewProjectCard = ({ card }) => {
       className="np-card"
       onClick={() => navigate(`../residencies/${card.id}`)}
     >
-      <img src={card.image} alt="home" className="innerWidth flexCenter" />
+      <img src={card.image1} alt="home" className="innerWidth flexCenter" />
 
       <span className="flexCenter thirdText np-price">
         <span style={{ color: "goldenrod" }}>Rs.</span>
