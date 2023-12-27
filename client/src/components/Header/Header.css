@@ -12,7 +12,6 @@
 
 .h-menu {
   gap: 2rem;
-  color: white;
 }
 .h-menu > *:hover {
   cursor: pointer;
