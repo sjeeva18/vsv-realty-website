@@ -51,19 +51,19 @@ const Residency = () => {
       <div className="flexColStart paddings innerWidth residency-container">
         <Swiper {...sliderSettingss}>
           <SwiperSlide>
-            <img src={data?.image1} alt="residency image1" />
+            <img src={data?.image1} alt="residency image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={data?.image2} alt="residency image2" />
+            <img src={data?.image2} alt="residency image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={data?.image3} alt="residency image3" />
+            <img src={data?.image3} alt="residency image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={data?.image4} alt="residency image4" />
+            <img src={data?.image4} alt="residency image" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={data?.image5} alt="residency image5" />
+            <img src={data?.image5} alt="residency image" />
           </SwiperSlide>
         </Swiper>
         <div className="flexCenter paddings innerWidth residency-details">
