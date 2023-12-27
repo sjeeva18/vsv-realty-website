@@ -61,9 +61,8 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <Button variant="primary" onClick={handleShow}>
+              <Button onClick={handleShow}>
                 <input type="submit" value="Send" />
-                <div className="flexCenter">send</div>
               </Button>
 
               <Modal show={show} onHide={handleClose}>
