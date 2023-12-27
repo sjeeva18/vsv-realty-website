@@ -37,9 +37,8 @@ const EnquireForm = () => {
 
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
-  const { data } =
-    useQuery(["land", id] || ["resd", id], () => getLand(id)) ||
-    getResidency(id);
+  const { data } = useQuery(["land", id], () => getLand(id));
+  useQuery(["residency", id], () => getResidency(id));
   console.log(data);
 
   return (
