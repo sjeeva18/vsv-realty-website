@@ -61,8 +61,9 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <input type="submit" value="Send" />
-              <Button variant="primary" onClick={handleShow} />
+              <Button variant="primary" onClick={handleShow}>
+                <input type="submit" value="Send" />
+              </Button>
 
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
