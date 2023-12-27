@@ -49,7 +49,8 @@ const Residency = () => {
   return (
     <div className="wrapper">
       <div className="flexColStart paddings innerWidth residency-container">
-        <Swiper>
+        <img src={data?.image1} alt="residency image" />
+        {/*}  <Swiper>
           <SwiperSlide>
             <img src={data?.image1} alt="residency image" />
           </SwiperSlide>
@@ -65,7 +66,7 @@ const Residency = () => {
           <SwiperSlide>
             <img src={data?.image5} alt="residency image" />
           </SwiperSlide>
-        </Swiper>
+  </Swiper> */}
         <div className="flexCenter paddings innerWidth residency-details">
           {/*Left side*/}
           <div className="flexColStart innerWidth left">

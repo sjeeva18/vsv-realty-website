@@ -19,11 +19,11 @@ input[type="submit"]:hover {
 }
 
 .residency-container > img {
-  align-self: center !important;
-  max-height: 35rem !important;
-  width: 100% !important;
-  border-radius: 1rem !important;
-  object-fit: cover !important;
+  align-self: center;
+  max-height: 35rem;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
 }
 
 .residency-details {
