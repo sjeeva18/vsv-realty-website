@@ -5,7 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useLocation } from "react-router-dom";
 import { useQuery } from "react-query";
-import { getLand } from "../api";
+import { getLand, getResidency } from "../api";
 
 const EnquireForm = () => {
   const form = useRef();
@@ -37,7 +37,9 @@ const EnquireForm = () => {
 
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
-  const { data } = useQuery(["land", id], () => getLand(id));
+  const { data } =
+    useQuery(["land", id] || ["resd", id], () => getLand(id)) ||
+    getResidency(id);
   console.log(data);
 
   return (

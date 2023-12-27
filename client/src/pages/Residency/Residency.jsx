@@ -15,32 +15,9 @@ import {
 } from "react-icons/fa";
 import { TbStairs } from "react-icons/tb";
 import { GiWindow } from "react-icons/gi";
-import emailjs from "@emailjs/browser";
 import EnquireForm from "../../utils/EnquireForm/EnquireForm";
 
 const Residency = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_n6cdqef",
-        "template_0k9z2bj",
-        form.current,
-        "5-hSzXVKfTZE_w87n"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("message sent");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   const [show, setShow] = useState(true);
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
@@ -146,32 +123,7 @@ const Residency = () => {
           </div>
         </div>
       </div>
-      <div className="paddings innerWidth e-container">
-        <span className="enquiryText">Enquire to Get Number</span>
-        <form ref={form} onSubmit={sendEmail}>
-          <div>
-            <label className="thirdText">Name</label>
-            <div>
-              <input type="text" name="user_name" />
-            </div>
-          </div>
-          <div>
-            <label className="thirdText">Phone Number</label>
-            <div>
-              <input type="number" name="user_phone" />
-            </div>
-          </div>
-          <div>
-            <label className="thirdText">Property Name</label>
-            <div>
-              <textarea name="user-prop" />
-              <div>
-                <input type="submit" value="Send" />
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+      <EnquireForm />
     </div>
   );
 };
