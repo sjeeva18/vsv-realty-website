@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 import { TbStairs } from "react-icons/tb";
 import { GiWindow } from "react-icons/gi";
-import EnquireForm from "../../utils/EnquireForm/EnquireForm";
+import EnquireFormResd from "../../utils/EnquireForm/EnquireFormResd";
 
 const Residency = () => {
   const [show, setShow] = useState(true);
@@ -123,7 +123,7 @@ const Residency = () => {
           </div>
         </div>
       </div>
-      <EnquireForm />
+      <EnquireFormResd />
     </div>
   );
 };

@@ -5,9 +5,9 @@ import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useLocation } from "react-router-dom";
 import { useQuery } from "react-query";
-import { getLand, getResidency } from "../api";
+import { getResidency } from "../api";
 
-const EnquireForm = () => {
+const EnquireFormResd = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -37,7 +37,7 @@ const EnquireForm = () => {
 
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
-  const { data } = useQuery(["land", id], () => getLand(id));
+  const { data } = useQuery(["residenct", id], () => getResidency(id));
   console.log(data);
 
   return (
@@ -86,4 +86,4 @@ const EnquireForm = () => {
   );
 };
 
-export default EnquireForm;
+export default EnquireFormResd;
