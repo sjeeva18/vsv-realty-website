@@ -63,7 +63,6 @@ const EnquireForm = () => {
             <div>
               <Button variant="primary" onClick={handleShow}>
                 <input type="submit" value="Send" />
-                Send
               </Button>
 
               <Modal show={show} onHide={handleClose}>
