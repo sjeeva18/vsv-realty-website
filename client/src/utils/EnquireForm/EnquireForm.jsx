@@ -69,15 +69,14 @@ const EnquireForm = () => {
 
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Modal heading</Modal.Title>
+                  <Modal.Title>Thank you for contacting VSV!</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>{data?.phone}</Modal.Body>
+                <Modal.Body>
+                  Here is your property enquiry number :{data?.phone}
+                </Modal.Body>
                 <Modal.Footer>
                   <Button variant="secondary" onClick={handleClose}>
                     Close
-                  </Button>
-                  <Button variant="primary" onClick={handleClose}>
-                    Save Changes
                   </Button>
                 </Modal.Footer>
               </Modal>
