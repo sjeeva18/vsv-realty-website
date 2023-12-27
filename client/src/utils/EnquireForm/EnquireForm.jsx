@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useLocation } from "react-router-dom";
@@ -61,9 +60,7 @@ const EnquireForm = () => {
           <div>
             <textarea name="user-prop" />
             <div>
-              <Button onClick={handleShow}>
-                <input type="submit" value="Send" />
-              </Button>
+              <input type="submit" value="Send" onClick={handleShow} />
 
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
