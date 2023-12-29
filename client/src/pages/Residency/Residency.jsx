@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useQuery } from "react-query";
 import { useLocation } from "react-router-dom";
 import "./Residency.css";
@@ -16,7 +16,7 @@ import {
 import { TbStairs } from "react-icons/tb";
 import { GiWindow } from "react-icons/gi";
 import EnquireFormResd from "../../utils/EnquireForm/EnquireFormResd";
-import CarouselPage from "../../utils/Carousel/Carousel";
+import ResdCarousel from "../../utils/ResdCarousel/ResdCarousel";
 
 const Residency = () => {
   const [show, setShow] = useState(true);
@@ -48,7 +48,7 @@ const Residency = () => {
   return (
     <div className="wrapper">
       <div className="flexColStart paddings innerWidth residency-container">
-        <CarouselPage />
+        <ResdCarousel />
         {/*}  <Swiper>
           <SwiperSlide>
             <img src={data?.image1} alt="residency image" />

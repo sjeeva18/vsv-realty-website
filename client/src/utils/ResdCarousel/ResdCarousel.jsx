@@ -3,9 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 import { useQuery } from "react-query";
 import { useLocation } from "react-router-dom";
 import { getResidency } from "../api";
-import "./Carousel.css";
 
-const CarouselPage = () => {
+const ResdCarousel = () => {
   const { pathname } = useLocation();
   const id = pathname.split("/").slice(-1)[0];
   const { data } = useQuery(["resd", id], () => getResidency(id));
@@ -14,7 +13,6 @@ const CarouselPage = () => {
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
-          style={{ height: "90vh" }}
           className="d-block w-100"
           src={data?.image1}
           alt="First slide"
@@ -26,7 +24,6 @@ const CarouselPage = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ height: "90vh" }}
           className="d-block w-100"
           src={data?.image2}
           alt="Second slide"
@@ -38,9 +35,34 @@ const CarouselPage = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ height: "90vh" }}
           className="d-block w-100"
           src={data?.image3}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h5>Third slide label</h5>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={data?.image4}
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h5>Third slide label</h5>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={data?.image5}
           alt="Third slide"
         />
         <Carousel.Caption>
@@ -54,4 +76,4 @@ const CarouselPage = () => {
   );
 };
 
-export default CarouselPage;
+export default ResdCarousel;
