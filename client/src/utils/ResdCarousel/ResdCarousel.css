@@ -6,7 +6,7 @@
 
 .carousel-container > img {
     align-self: center;
-    max-height: 50%;
+    max-height: 20rem;
     width: 100%;
     object-fit: cover;
   }
