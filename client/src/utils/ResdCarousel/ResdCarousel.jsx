@@ -13,7 +13,7 @@ const ResdCarousel = () => {
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
-          style={{ height: "90vh" }}
+          style={{ height: "70vh" }}
           className="d-block w-100"
           src={data?.image1}
           alt="First slide"
@@ -25,7 +25,7 @@ const ResdCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ height: "90vh" }}
+          style={{ height: "70vh" }}
           className="d-block w-100"
           src={data?.image2}
           alt="Second slide"
@@ -37,7 +37,7 @@ const ResdCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ height: "90vh" }}
+          style={{ height: "70vh" }}
           className="d-block w-100"
           src={data?.image3}
           alt="Third slide"
