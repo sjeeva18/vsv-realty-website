@@ -3,7 +3,6 @@ import Carousel from "react-bootstrap/Carousel";
 import { useQuery } from "react-query";
 import { useLocation } from "react-router-dom";
 import { getResidency } from "../api";
-import "./ResdCarousel.css";
 
 const ResdCarousel = () => {
   const { pathname } = useLocation();
@@ -38,7 +37,7 @@ const ResdCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ height: "70vh" }}
+          style={{ height: "90vh" }}
           className="d-block w-100"
           src={data?.image3}
           alt="Third slide"
