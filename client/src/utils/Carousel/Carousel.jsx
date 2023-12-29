@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { useQuery } from "react-query";
 import { useLocation } from "react-router-dom";
 import { getResidency } from "../api";
+import "./Carousel.css"
 
 const CarouselPage = () => {
   const { pathname } = useLocation();
@@ -10,10 +11,10 @@ const CarouselPage = () => {
   const { data } = useQuery(["resd", id], () => getResidency(id));
   console.log(data);
   return (
-    <Carousel data-bs-theme="dark">
+    <Carousel data-bs-theme="dark" className="flexCenter innerWidth Paddings">
       <Carousel.Item>
         <img
-          style={{ height: "50vh" }}
+          style={{ height: "70vh" }}
           className="d-block w-100"
           src={data?.image1}
           alt="First slide"
@@ -25,7 +26,7 @@ const CarouselPage = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ height: "50vh" }}
+          style={{ height: "70vh" }}
           className="d-block w-100"
           src={data?.image2}
           alt="Second slide"
@@ -37,7 +38,7 @@ const CarouselPage = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ height: "50vh" }}
+          style={{ height: "70vh" }}
           className="d-block w-100"
           src={data?.image3}
           alt="Third slide"
