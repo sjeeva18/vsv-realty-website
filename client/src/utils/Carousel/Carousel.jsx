@@ -1,13 +1,20 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { useQuery } from "react-query";
+import { useLocation } from "react-router-dom";
 
 const CarouselPage = () => {
+  const { pathname } = useLocation();
+  const id = pathname.split("/").slice(-1)[0];
+  const { data } = useQuery(["resd", id], () =>
+    getResidency(id)
+  );
   return (
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=f5f5f5"
+          src={data?.image1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,7 +25,7 @@ const CarouselPage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=eee"
+          src={data?.image2}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -29,7 +36,7 @@ const CarouselPage = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+          src={data?.image3}
           alt="Third slide"
         />
         <Carousel.Caption>
