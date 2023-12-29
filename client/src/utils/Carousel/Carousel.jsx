@@ -11,7 +11,7 @@ const CarouselPage = () => {
   const { data } = useQuery(["resd", id], () => getResidency(id));
   console.log(data);
   return (
-    <Carousel data-bs-theme="dark" className="flexCenter innerWidth Paddings">
+    <Carousel data-bs-theme="dark" className="carousel-container">
       <Carousel.Item>
         <img
           style={{ height: "80vh" }}
