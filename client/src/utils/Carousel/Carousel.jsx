@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-const Carousel = () => {
+const CarouselPage = () => {
   return (
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
@@ -43,4 +43,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselPage;

@@ -16,7 +16,7 @@ import {
 import { TbStairs } from "react-icons/tb";
 import { GiWindow } from "react-icons/gi";
 import EnquireFormResd from "../../utils/EnquireForm/EnquireFormResd";
-import Carousel from "../../utils/Carousel/Carousel";
+import CarouselPage from "../../utils/Carousel/Carousel";
 
 const Residency = () => {
   const [show, setShow] = useState(true);
@@ -48,7 +48,7 @@ const Residency = () => {
   return (
     <div className="wrapper">
       <div className="flexColStart paddings innerWidth residency-container">
-        <Carousel />
+        <CarouselPage />
         {/*}  <Swiper>
           <SwiperSlide>
             <img src={data?.image1} alt="residency image" />
