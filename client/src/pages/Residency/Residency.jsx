@@ -47,7 +47,9 @@ const Residency = () => {
   }
   return (
     <div className="wrapper">
-      <ResdCarousel />
+      <div className="innerWidth">
+        <ResdCarousel />
+      </div>
       <div className="flexColStart paddings innerWidth residency-container">
         {/*}  <Swiper>
           <SwiperSlide>
