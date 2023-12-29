@@ -37,7 +37,7 @@ const CarouselPage = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          style={{ height: "90vh" }}
+          style={{ height: "50vh" }}
           className="d-block w-100"
           src={data?.image3}
           alt="Third slide"
