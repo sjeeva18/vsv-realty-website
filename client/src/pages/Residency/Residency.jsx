@@ -16,7 +16,6 @@ import {
 import { TbStairs } from "react-icons/tb";
 import { GiWindow } from "react-icons/gi";
 import EnquireFormResd from "../../utils/EnquireForm/EnquireFormResd";
-import UncontrolledExample from "../../utils/ImageSlideResd/ImageSlideResd";
 
 const Residency = () => {
   const [show, setShow] = useState(true);
