@@ -1,12 +1,12 @@
 .carousel-indicators [data-bs-target] {
-    border-radius: 100%;
-    width: 10px;
-    height: 10px;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
 }
 
 .carousel-container > img {
-    align-self: center;
-    max-height: 20rem;
-    width: 100%;
-    object-fit: cover;
-  }
+  align-self: center;
+  height: 70vh !important;
+  width: 100%;
+  object-fit: cover;
+}
