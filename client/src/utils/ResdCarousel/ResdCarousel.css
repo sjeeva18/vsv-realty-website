@@ -6,7 +6,7 @@
 
 @media (max-width: 750px) {
   .carousel-container {
-    max-height: 20rem;
+    height: 50vh !important;
   }
 }
 
