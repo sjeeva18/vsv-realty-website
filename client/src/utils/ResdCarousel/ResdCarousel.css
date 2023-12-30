@@ -8,3 +8,10 @@
   align-self: center;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .carousel-container {
+    align-self: center;
+    height: 50vh !important;
+  }
+}
