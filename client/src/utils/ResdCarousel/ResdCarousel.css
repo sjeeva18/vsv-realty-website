@@ -4,10 +4,5 @@
   height: 10px;
 }
 
-@media (max-width: 750px) {
-  .carousel-container {
-    height: 50vh !important;
-  }
-}
 
 
