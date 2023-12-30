@@ -10,7 +10,7 @@ const ResdCarousel = () => {
   const { data } = useQuery(["resd", id], () => getResidency(id));
   console.log(data);
   return (
-    <div className="carousel-container">
+    <div className="paddings innerWidth carousel-container">
       <Carousel data-bs-theme="dark">
         <Carousel.Item>
           <img
