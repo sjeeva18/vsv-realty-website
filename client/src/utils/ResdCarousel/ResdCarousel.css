@@ -9,8 +9,4 @@
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .carousel-container > img {
-    height: 50vh !important;
-  }
-}
+
