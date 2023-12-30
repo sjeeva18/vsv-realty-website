@@ -11,6 +11,6 @@
 
 @media (max-width: 768px) {
   .carousel-container > img {
-    height: 20rem !important;
+    height: 50vh !important;
   }
 }
