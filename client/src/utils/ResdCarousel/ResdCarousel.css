@@ -5,7 +5,7 @@
 }
 
 @media (max-width: 750px) {
-  .crosel-img-size {
-    max-height: 150px !important;
+  .carousel > img {
+    max-height: 20rem !important;
   }
 }
