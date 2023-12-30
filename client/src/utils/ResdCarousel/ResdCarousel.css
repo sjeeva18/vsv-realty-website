@@ -4,9 +4,10 @@
   height: 10px;
 }
 
-.carousel-container > img {
-  align-self: center;
-  width: 100%;
+@media (max-width: 750px) {
+  .carousel-container > img {
+    max-height: 10rem;
+  }
 }
 
 
