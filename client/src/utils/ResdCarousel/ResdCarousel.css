@@ -6,8 +6,6 @@
 
 @media (max-width: 750px) {
   .img {
-    max-height: 10rem;
+    height: 10rem;
   }
 }
-
-
