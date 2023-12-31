@@ -6,6 +6,7 @@
 
 .Carousel-container{
   align-self: center;
-  height: 70vh !important;
+  width: 100px;
+  height: 300px;
   object-fit: cover;
 }
