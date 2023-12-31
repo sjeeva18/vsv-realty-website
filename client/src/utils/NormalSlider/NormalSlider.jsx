@@ -11,7 +11,7 @@ const NormalSlider = () => {
   const { data } = useQuery(["resd", id], () => getResidency(id));
   console.log(data);
   return (
-    <div className="paddings innerWidth">
+    <div className="paddings innerWidth flexCenter">
       <Swiper>
         <SwiperSlide>
           <div className="normal-container">
