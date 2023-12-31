@@ -20,7 +20,10 @@
 a {
   text-decoration: none !important;
   color: inherit !important;
-  overflow: inherit !important;
+}
+
+.swiper-horizontal {
+  overflow: hidden !important;
 }
 
 .wrapper {
