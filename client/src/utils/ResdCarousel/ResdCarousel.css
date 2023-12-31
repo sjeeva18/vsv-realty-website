@@ -4,10 +4,13 @@
   height: 10px;
 }
 
+.car-container > img {
+  position: relative;
+  height: 70vh;
+}
 
-
-@media (max-width: 700px) {
-  .carousel-container {
-    width: 100%;
+@media (min-width: 700px) {
+  .car-container > img {
+    height: 30vh;
   }
 }
