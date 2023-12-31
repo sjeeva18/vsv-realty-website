@@ -13,7 +13,8 @@ const ResdCarousel = () => {
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
-          className="d-block w-100 Carousel-container"
+          style={{ height: "60vh" }}
+          className="d-block w-100 innerWidth Carousel-container"
           src={data?.image1}
           alt="First slide"
         />
@@ -24,7 +25,8 @@ const ResdCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 Carousel-container"
+          style={{ height: "60vh" }}
+          className="d-block w-100 innerWidth Carousel-container"
           src={data?.image2}
           alt="Second slide"
         />
@@ -34,7 +36,8 @@ const ResdCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 Carousel-container"
+          style={{ height: "60vh" }}
+          className="d-block w-100 innerWidth Carousel-container"
           src={data?.image3}
           alt="Third slide"
         />
@@ -44,7 +47,8 @@ const ResdCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 Carousel-container"
+          style={{ height: "60vh" }}
+          className="d-block w-100 innerWidth Carousel-container"
           src={data?.image4}
           alt="Third slide"
         />
@@ -54,7 +58,8 @@ const ResdCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100 Carousel-container"
+          style={{ height: "60vh" }}
+          className="d-block w-100 innerWidth Carousel-container"
           src={data?.image5}
           alt="Third slide"
         />
