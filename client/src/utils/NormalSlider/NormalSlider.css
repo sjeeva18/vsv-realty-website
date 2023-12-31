@@ -1,3 +1,8 @@
+.n-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
 .normal-container > img {
   align-self: center;
   max-height: 35rem;
