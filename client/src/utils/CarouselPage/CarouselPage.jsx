@@ -17,6 +17,7 @@ const Banner = () => {
           <Carousel>
             <Carousel.Item interval={2000}>
               <img
+                style={{ height: "50vh" }}
                 className="d-block w-100"
                 src={data?.image1}
                 alt="First slide"
@@ -30,6 +31,7 @@ const Banner = () => {
             </Carousel.Item>
             <Carousel.Item interval={2000}>
               <img
+                style={{ height: "50vh" }}
                 className="d-block w-100"
                 src={data?.image2}
                 alt="Second slide"
@@ -44,6 +46,7 @@ const Banner = () => {
             </Carousel.Item>
             <Carousel.Item interval={2000}>
               <img
+                style={{ height: "50vh" }}
                 className="d-block w-100"
                 src={data?.image3}
                 alt="Third slide"
