@@ -14,27 +14,27 @@ const NormalSlider = () => {
     <div className="paddings innerWidth n-wrapper">
       <Swiper>
         <SwiperSlide>
-          <div className="normal-container">
+          <div className="normal-container flexCenter">
             <img src={data?.image1} alt="residency image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="normal-container">
+          <div className="normal-container flexCenter">
             <img src={data?.image2} alt="residency image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="normal-container">
+          <div className="normal-container flexCenter">
             <img src={data?.image3} alt="residency image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="normal-container">
+          <div className="normal-container flexCenter">
             <img src={data?.image4} alt="residency image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="normal-container">
+          <div className="normal-container flexCenter">
             <img src={data?.image5} alt="residency image" />
           </div>
         </SwiperSlide>
