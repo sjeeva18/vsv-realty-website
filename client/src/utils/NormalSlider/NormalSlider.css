@@ -1,9 +1,9 @@
 .n-wrapper {
   overflow: hidden;
   position: relative;
+  row-gap: 2rem;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .normal-container > img {
