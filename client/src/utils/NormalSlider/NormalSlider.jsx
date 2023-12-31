@@ -11,30 +11,30 @@ const NormalSlider = () => {
   const { data } = useQuery(["resd", id], () => getResidency(id));
   console.log(data);
   return (
-    <div className="paddings innerWidth n-wrapper">
+    <div className="paddings innerWidth flexCenter n-wrapper">
       <Swiper>
         <SwiperSlide>
-          <div className="normal-container flexCenter">
+          <div className="normal-container">
             <img src={data?.image1} alt="residency image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="normal-container flexCenter">
+          <div className="normal-container">
             <img src={data?.image2} alt="residency image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="normal-container flexCenter">
+          <div className="normal-container">
             <img src={data?.image3} alt="residency image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="normal-container flexCenter">
+          <div className="normal-container">
             <img src={data?.image4} alt="residency image" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="normal-container flexCenter">
+          <div className="normal-container">
             <img src={data?.image5} alt="residency image" />
           </div>
         </SwiperSlide>
