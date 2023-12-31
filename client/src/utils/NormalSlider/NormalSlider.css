@@ -2,5 +2,5 @@
   align-self: center;
   max-height: 35rem;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
