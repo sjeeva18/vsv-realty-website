@@ -4,7 +4,7 @@
   height: 10px;
 }
 
-.Carousel-container > img {
+.Carousel-container{
   align-self: center;
   height: 70vh !important;
   object-fit: cover;
