@@ -1,14 +1,11 @@
 .n-wrapper {
   overflow: hidden;
   position: relative;
-  row-gap: 2rem;
-  justify-content: center;
-  align-items: center;
 }
 
 .normal-container > img {
   align-self: center;
-  max-height: 35rem;
+  height: 35rem;
   width: 100%;
   object-fit: fill;
 }
