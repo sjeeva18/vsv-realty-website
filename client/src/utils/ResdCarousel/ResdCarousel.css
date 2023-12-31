@@ -4,9 +4,13 @@
   height: 10px;
 }
 
-.Carousel-container{
+.Carousel-container {
   align-self: center;
-  width: 100px;
-  height: 300px;
   object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .Carousel-container {
+    height: 20rem;
+  }
 }
