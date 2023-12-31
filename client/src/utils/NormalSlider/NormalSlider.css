@@ -9,3 +9,9 @@
   width: 100%;
   object-fit: fill;
 }
+
+@media (min-width: 700px){
+  .normal-container > img{
+    height: 35rem
+  }
+}
