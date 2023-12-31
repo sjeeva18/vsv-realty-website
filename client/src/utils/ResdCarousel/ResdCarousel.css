@@ -5,8 +5,7 @@
 }
 
 .car-container > img {
-  position: relative;
-  height: 70vh;
+  height: 70vh !important;
 }
 
 @media (min-width: 700px) {
