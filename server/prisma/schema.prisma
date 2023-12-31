@@ -63,3 +63,29 @@ model Land {
 
     @@unique(fields: [address, userEmail])
 }
+
+model NewProject {
+    id          String   @id @default(auto()) @map("_id") @db.ObjectId
+    title       String
+    area        String
+    facing      String
+    furnishing  String
+    description String
+    price       String
+    address     String
+    city        String
+    state       String
+    image1      String
+    image2      String
+    image3      String
+    image4      String
+    image5      String
+    location    String
+    facilities  Json
+    phone       String
+    userEmail   String
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @updatedAt
+
+    @@unique(fields: [address, userEmail])
+}

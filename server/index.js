@@ -5,6 +5,7 @@ import cors from "cors";
 import { userRoute } from "./Routes/userRoute.js";
 import { residencyRoute } from "./Routes/residencyRoute.js";
 import { landRoute } from "./Routes/landRoute.js";
+import { newprojectRoute } from "./Routes/newprojectRoute.js";
 
 dotenv.config();
 
@@ -23,3 +24,4 @@ app.listen(PORT, () => {
 app.use("/api/user", userRoute);
 app.use("/api/residency", residencyRoute);
 app.use("/api/land", landRoute);
+app.use("api/newproject", newprojectRoute);
