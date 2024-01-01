@@ -4,7 +4,7 @@
   height: 10px;
 }
 
-.carousel-inner > img {
+.carousel-container {
   width: 640px;
   height: 360px;
 }
