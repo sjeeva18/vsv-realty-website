@@ -10,6 +10,6 @@
 
 @media (min-width: 700px) {
   .car-container > img {
-    height: 30vh;
+    height: 30rem;
   }
 }
