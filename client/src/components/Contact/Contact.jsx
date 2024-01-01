@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import "./Value.css";
 import { MdCall, MdMail } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
 const Contact = () => {
@@ -72,7 +73,7 @@ const Contact = () => {
 
         {/* right side */}
         <div className="flexCenter c-right">
-          <div className="cimage-container">
+          <div className="vimage-container">
             <img src="./5f4fc83bb484476a40e95960_1599064123104.png" alt="" />
           </div>
         </div>
