@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { useQuery } from "react-query";
 import { useLocation } from "react-router-dom";
 import { getResidency } from "../api";
+import "./ResdCarousel.css";
 
 const ResdCarousel = () => {
   const { pathname } = useLocation();
