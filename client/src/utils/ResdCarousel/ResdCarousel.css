@@ -4,12 +4,6 @@
   height: 10px;
 }
 
-.car-container{
-  height: 100rem !important;
-}
-
-@media (min-width: 700px) {
-  .car-container > img {
-    height: 30rem;
-  }
+.carousel-container .car-container {
+  height: 70vh !important;
 }
