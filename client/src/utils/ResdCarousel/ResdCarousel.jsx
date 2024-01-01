@@ -14,7 +14,7 @@ const ResdCarousel = () => {
       <Carousel.Item>
         <img
           style={{ height: "400px" }}
-          className="d-block w-100"
+          className="d-block w-100 flexCenter"
           src={data?.image1}
           alt="First slide"
         />
@@ -22,7 +22,7 @@ const ResdCarousel = () => {
       <Carousel.Item>
         <img
           style={{ height: "400px" }}
-          className="d-block w-100"
+          className="d-block w-100 flexCenter"
           src={data?.image2}
           alt="Second slide"
         />
@@ -30,7 +30,7 @@ const ResdCarousel = () => {
       <Carousel.Item>
         <img
           style={{ height: "400px" }}
-          className="d-block w-100"
+          className="d-block w-100 flexCenter"
           src={data?.image3}
           alt="Third slide"
         />
@@ -38,7 +38,7 @@ const ResdCarousel = () => {
       <Carousel.Item>
         <img
           style={{ height: "400px" }}
-          className="d-block w-100"
+          className="d-block w-100 flexCenter"
           src={data?.image4}
           alt="Third slide"
         />
@@ -46,7 +46,7 @@ const ResdCarousel = () => {
       <Carousel.Item>
         <img
           style={{ height: "400px" }}
-          className="d-block w-100"
+          className="d-block w-100 flexCenter"
           src={data?.image5}
           alt="Third slide"
         />
