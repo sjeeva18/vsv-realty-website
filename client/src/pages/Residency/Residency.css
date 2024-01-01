@@ -50,7 +50,6 @@ input[type="submit"]:hover {
 .facilities {
   gap: 1rem;
   font-size: 0.9rem;
-  padding: 1rem;
 }
 
 .facility {
