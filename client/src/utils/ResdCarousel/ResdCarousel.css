@@ -4,6 +4,6 @@
   height: 10px;
 }
 
-.carousel .carousel-inner {
-  height: 500px;
+.carousel-container {
+  height: 70vh;
 }
