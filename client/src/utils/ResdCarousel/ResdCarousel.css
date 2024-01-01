@@ -4,6 +4,7 @@
   height: 10px;
 }
 
-.carousel-container .car-container {
-  height: 70vh !important;
+.carousel-inner > .item > img {
+  width: 640px;
+  height: 360px;
 }
