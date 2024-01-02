@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left side */}
         <div className="flexColStart hero-left">
-          <div className=" flexCenter hero-title">
+          <div className="hero-title">
             <motion.h1
               initial={{ y: "7rem", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -36,18 +36,20 @@ const Hero = () => {
             </span>
           </div>
 
-          <div className="flexColStart hero-link">
-            <div className="flexCenter h-container">
+          <div className="flexCenter hero-link">
+            <div className="flexColCenter h-container">
               <NavLink to="/residencies">
                 <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
                 Residencies
               </NavLink>
-
+            </div>
+            <div className="flexColCenter h-container">
               <NavLink to="/lands">
                 <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
                 Lands
               </NavLink>
-
+            </div>
+            <div className="flexColCenter h-container">
               <NavLink to="/residencies">
                 <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
                 New Projects

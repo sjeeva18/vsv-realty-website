@@ -60,6 +60,11 @@
   color: rgb(205, 181, 43);
 }
 
+.hero-link {
+  width: 100%;
+  justify-content: space-between;
+}
+
 /* right side */
 
 .image-container {
@@ -101,7 +106,8 @@
     font-size: 0.8rem;
   }
   .hero-link .h-container {
-    align-items: center;
     justify-content: center;
+    gap: 1.5rem;
+    font-weight: wrap;
   }
 }
