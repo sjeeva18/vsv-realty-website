@@ -79,37 +79,37 @@ const Residency = () => {
 
             {/* facilities */}
             <div className="flexCenter facilities">
-              <div className="flexStart facility">
+              <div className="flexCenter facility">
                 <FaBed size={20} color="#1F3E72" />
                 <span>{data?.facilities.bedroom} Bedroom</span>
               </div>
-              <div className="flexStart facility">
+              <div className="flexCenter facility">
                 <FaShower size={20} color="#1F3E72" />
                 <span>{data?.facilities.bathroom} Bathroom</span>
               </div>
-              <div className="flexStart facility">
+              <div className="flexCenter facility">
                 <TbStairs size={20} color="#1F3E72" />
                 <span>{data?.facilities.floor} Floor</span>
               </div>
-              <div className="flexStart facility">
+              <div className="flexCenter facility">
                 <FaBuilding size={20} color="#1F3E72" />
                 <span>{data?.facilities.totalfloor} Total Floor</span>
               </div>
-              <div className="flexStart facility">
+              <div className="flexCenter facility">
                 <FaCar size={20} color="#1F3E72" />
                 <span>{data?.facilities.carparking} Car Parking</span>
               </div>
             </div>
-            <div className="flexStart facilities">
-              <div className="flexStart facility">
+            <div className="flexCenter facilities">
+              <div className="flexCenter facility">
                 <FaBirthdayCake size={20} color="#1F3E72" />
                 <span>{data?.facilities.ageofproperty} Age of Property</span>
               </div>
-              <div className="flexStart facility">
+              <div className="flexCenter facility">
                 <FaCompass size={20} color="#1F3E72" />
                 <span>{data?.facing} Facing</span>
               </div>
-              <div className="flexStart facility">
+              <div className="flexCenter facility">
                 <GiWindow size={20} color="#1F3E72" />
                 <span>{data?.furnishing}</span>
               </div>
