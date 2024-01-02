@@ -9,7 +9,7 @@ const Hero = () => {
     <section className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left side */}
-        <div className="flexCenter hero-left">
+        <div className="flexColStart hero-left">
           <div className="hero-title">
             <motion.h1
               initial={{ y: "7rem", opacity: 0 }}
@@ -23,7 +23,7 @@ const Hero = () => {
             </motion.h1>
           </div>
 
-          <div className="flexCenter hero-des">
+          <div className="flexColStart hero-des">
             <span className="thirdText">
               Explore Chennai's perfect properties with us.
             </span>
@@ -36,7 +36,7 @@ const Hero = () => {
             </span>
           </div>
 
-          <div className="flexCenter hero-link">
+          <div className="flexColStart hero-link">
             <div className="flexCenter h-container">
               <NavLink to="/residencies">
                 <FaAngleDoubleRight size={20} style={{ gap: "1rem" }} />
@@ -56,7 +56,7 @@ const Hero = () => {
           </div>
 
           <div className="flexCenter stats">
-            <div className="flexCenter stat">
+            <div className="flexColCenter stat">
               <span>
                 <CountUp end={15} />
                 <span>+</span>
