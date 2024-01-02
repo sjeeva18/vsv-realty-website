@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left side */}
         <div className="flexColStart hero-left">
-          <div className="hero-title">
+          <div className=" flexCenter hero-title">
             <motion.h1
               initial={{ y: "7rem", opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
