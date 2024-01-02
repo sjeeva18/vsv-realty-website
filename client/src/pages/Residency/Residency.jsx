@@ -78,7 +78,7 @@ const Residency = () => {
             </div>
 
             {/* facilities */}
-            <div className="flexStart facilities">
+            <div className="flexCenter facilities">
               <div className="flexStart facility">
                 <FaBed size={20} color="#1F3E72" />
                 <span>{data?.facilities.bedroom} Bedroom</span>

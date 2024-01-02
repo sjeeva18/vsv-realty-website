@@ -54,7 +54,7 @@ input[type="submit"]:hover {
 }
 
 .facility {
-  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 @media (max-width: 700px) {
