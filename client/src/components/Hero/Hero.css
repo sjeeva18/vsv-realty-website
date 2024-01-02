@@ -60,18 +60,13 @@
   color: rgb(205, 181, 43);
 }
 
-.hero-link {
-  width: 100%;
-  justify-content: space-between;
-}
-
 /* right side */
 
 .image-container {
   box-shadow: 10px 10px 20px rgb(116, 116, 116);
   border: 5px solid #fff;
   width: 650px;
-  height: 480px;
+  height: 470px;
   overflow: hidden;
 }
 
@@ -106,8 +101,7 @@
     font-size: 0.8rem;
   }
   .hero-link .h-container {
+    align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    font-weight: wrap;
   }
 }
