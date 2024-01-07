@@ -5,7 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useLocation } from "react-router-dom";
 import { useQuery } from "react-query";
-import { getLand, getResidency } from "../api";
+import { getLand } from "../api";
 
 const EnquireForm = () => {
   const form = useRef();
