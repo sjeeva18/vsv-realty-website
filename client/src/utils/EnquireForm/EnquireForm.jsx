@@ -47,19 +47,19 @@ const EnquireForm = () => {
         <div>
           <label className="thirdText">Name</label>
           <div>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" placeholder="Name*" />
           </div>
         </div>
         <div>
           <label className="thirdText">Phone Number</label>
           <div>
-            <input type="number" name="user_phone" />
+            <input type="number" name="user_phone" placeholder="Number*"/>
           </div>
         </div>
         <div>
           <label className="thirdText">Property Name</label>
           <div>
-            <textarea name="user-prop" />
+            <textarea name="user-prop"placeholder="Land Area*" />
             <div>
               <Button variant="button" onClick={handleShow}>
                 <input type="submit" value="Send" />
