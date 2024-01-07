@@ -100,8 +100,4 @@
   .stat > :nth-child(2) {
     font-size: 0.8rem;
   }
-  .hero-link .h-container {
-    align-items: center;
-    justify-content: center;
-  }
 }
