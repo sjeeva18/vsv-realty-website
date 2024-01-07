@@ -91,8 +91,8 @@ const Land = () => {
             </div>
           </div>
         </div>
-        <EnquireForm />
       </div>
+      <EnquireForm />
     </div>
   );
 };
